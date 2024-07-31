@@ -1,5 +1,9 @@
 /*ui.pack loader style*/
 @import url( data/ui.reset.css );
+
+@import url( data/ui.effects.loader.css );
+@import url( data/ui.spinner.css );
+
 @import url( data/ui.typography.css );
 @import url( data/ui.layout.css );
 @import url( data/ui.table.css );

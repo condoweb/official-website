@@ -5,7 +5,7 @@
 	  
         var guipath = "ui.pack/data/";
 
-        $.getScript(guipath+"ui.layout.loaderpage.js");
+        $.getScript(guipath+"ui.loader.js");
         $.getScript(guipath+"ui.layout.ancor.js");
 
         $.getScript(guipath+"ui.layout.filldocument.js");
@@ -16,6 +16,7 @@
         $.getScript(guipath+"ui.layout.equa.js");
         $.getScript(guipath+"ui.layout.centred.js");
         $.getScript(guipath+"ui.layout.pull.js");
+        $.getScript(guipath+"ui.layout.fitscreen.js");
 
         $.getScript(guipath+"ui.nav.flap.js");
         $.getScript(guipath+"ui.hideshow.js");

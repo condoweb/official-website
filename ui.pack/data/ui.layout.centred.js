@@ -10,8 +10,8 @@ function centred(){
         //Se inline allora left e right sono padding, non margin
         //Se block, allora è tutto a margin
 
-        var parent_height = parseFloat( $(this).parent().height() );
-        var parent_width = parseFloat( $(this).parent().width() );
+        var parent_height = parseFloat( $(this).parent().outerHeight() );
+        var parent_width = parseFloat( $(this).parent().outerWidth() );
         var him_height = parseFloat( $(this).outerHeight() );
         var him_width = parseFloat( $(this).outerWidth() );
 

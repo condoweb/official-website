@@ -9,32 +9,31 @@ BUTTON SETTING
     vertical-align: middle !important;
     text-align: center !important;
     letter-spacing: normal !important;
-    font-weight: bold !important;
     line-height: 1.25em !important;
     font-style: inherit !important;
-    transition: all 0.1s;
-    -moz-transition: all 0.1s;
-    -o-transition: all 0.1s;
-    -webkit-transition: all 0.1s;
-    -ms-transition: all 0.1s;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /*button disabled*/
-.§button.disabled,
-input.§button:disabled
-{
-    background: inherit !important;
-    box-shadow: 0 !important;
-    -moz-opacity: 0.50;
+.disabled
+{   -moz-opacity: 0.50 !important;
     opacity: 0.50 !important;
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);
     pointer-events: none !important;
     cursor: default;
 }
-input:hover:disabled
-{ background: inherit !important; }
-input:active:disabled
-{ background: inherit !important; }
+.§button:hover:disabled
+{   -moz-opacity: 0.50 !important;
+    opacity: 0.50 !important;
+    pointer-events: none !important;
+    cursor: default;
+}
+.§button:active:disabled
+{   -moz-opacity: 0.50 !important;
+    opacity: 0.50 !important;
+    pointer-events: none !important;
+    cursor: default;    
+}
 
 /*button text*/
 textarea.§button,
@@ -43,6 +42,7 @@ input[type="password"].§button{
     font-weight: 100 !important;
     text-align: left !important;
 }
+
 
 /*button correction for - a textarea text & password upload  range  check & radio*/
 input[type="file"].§button{ display: none !important; }
@@ -74,7 +74,7 @@ textarea:active.§button, input[type="text"]:active.§button, input[type="passwo
     -webkit-border-radius: 0px !important;
     -moz-border-radius: 0px !important;
     border-radius: 0px !important;
-    margin-left: -3.4px !important;
+    margin-left: -4.5px !important;
 }
 .§button-group > *:first-child{
     margin-left: 0px !important; 

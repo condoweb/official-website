@@ -13,30 +13,30 @@
                 <img style="width: 726px;" src="media/image/design/logoBig.png" alt="Condoweb - benvenuti sul sito ufficiale per amministrare i condomini" />
                 <p class="homeSlogan">Dritti a ciò che bisogna fare e con pochi click! Prova subito il sistema condoweb e scopri come gestire, ricevere, trasmettere ed aiutare il tuo condominio e gli altri tuoi condòmini</p>
             </div>
-            <div class="§grid gridSpace-20">
-                <div class="columnContent desktop-33 mobile-33 compact-100">
-                    <a href="scoprici.php" class="button-big §radius-small">SCOPRI DI PIU’</a>
-                </div>
-                <div class="columnContent desktop-33 mobile-33 compact-100">
-                    <a href="PAGINA_ACCESSO"  class="button-big §radius-small">INIZIA ORA</a>
-                </div>
-                <div class="columnContent desktop-33 mobile-33 compact-100 mobiLast">
-                    <a href="PAGINA_CONDOMINI"  class="button-big §radius-small">CERCA CONDOMINIO</a>
-                </div>
-                <div class="columnContent desktop-off mobile-off compact-100">
-                    <div class="footerHomeMOBILE">
-                        <p>CONDOWEB ® - p.iva 1234567890</p>
+                <div class="§grid gridSpace-20">
+                    <div class="columnContent desktop-33 mobile-33 compact-100">
+                        <a href="scoprici.php" class="button-big §radius-small">SCOPRI DI PIU’</a>
                     </div>
+                    <div class="columnContent desktop-33 mobile-33 compact-100">
+                        <a href="PAGINA_ACCESSO"  class="button-big §radius-small">INIZIA ORA</a>
+                    </div>
+                    <div class="columnContent desktop-33 mobile-33 compact-100 mobiLast">
+                        <a href="PAGINA_CONDOMINI"  class="button-big §radius-small">CERCA CONDOMINIO</a>
+                    </div>
+                    <div class="columnContent desktop-off mobile-off compact-100">
+                        <div class="footerHomeMOBILE">
+                            <p>CONDOWEB ® - p.iva 1234567890</p>
+                        </div>
+                    </div>
+                    <div class="clearAll"></div>
                 </div>
-                <div class="clearAll"></div>
-            </div>
         </div>
         <div class="footerHome desktop-on mobile-on compact-off">
             <p>CONDOWEB ® - p.iva 1234567890 - è un marchio registrato - Il logo, il sito ed ogni suo elemento è di esclusiva proprietà degli autori - Ogni utlizzo improprio sarà punito secondo i termini di legge vigenti.</p>
         </div>
         
         <style>
-            
+            /*
             .homeSlogan{
                 color: #fff !important;
                 font-size: 22px;
@@ -124,7 +124,7 @@
             .footerHome>p,
             .footerHomeMOBILE>p{  font-size: 10px; margin: 0; padding: 5px; }
             
-            
+            */
         </style>
 
         <!--/SITE CONTENT-->

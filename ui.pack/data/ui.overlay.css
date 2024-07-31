@@ -20,6 +20,7 @@
     overflow-y: scroll;
 }
 .§overbox {
+    display: none;
     position: absolute;
     display: block; 
 }

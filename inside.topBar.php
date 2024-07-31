@@ -2,7 +2,7 @@
             <div class="§grid gridSpace-10 homeTestata">
                 <div class="columnContent desktop-75 mobile-65 compact-100">
                     <!--<a class="§float-left logLink" href="PAGINA_LOGIN" style="padding:0 10px 0 10px;"><span class="§radius-full" style="border: 2px solid #fff; "><i class="ico-user-5"></i></span>&nbsp;&nbsp;ACCEDI / REGISTRATI</a>-->
-                    <p class="§float-left logLink">&nbsp;&nbsp;BENVENUTO: Mario Rossi</p>
+                    <p class="§float-left logLink">&nbsp;&nbsp;BENVENUTO: <a href="admin.profilo.dashboard.php">Mario Rossi</a></p>
                     <p class="§float-left desktop-on mobile-on compact-off">&nbsp;&nbsp;|&nbsp;&nbsp;www.condoweb.it - gestire online condomini e condomini</p>
                 </div>
                 <div class="columnContent desktop-25 mobile-35 compact-100 §text-right">
