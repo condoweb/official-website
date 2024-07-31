@@ -18,18 +18,18 @@ some other videos and screenshots:<br>
 <table>
   <tr>
     <td style="text-align:center; width:50%;">
-      <a href="https://condoweb.github.io/open-depot/mockup/screencapture_02.webm" target="_blank">
-        <img width="1000" height="1">
-        <img src="https://condoweb.github.io/open-depot/mockup/screencapture_01.gif" style="width:100%;" alt="preview">
-        <p>GO TO HD Video</p>
+      <a href="https://condoweb.github.io/open-depot/mockup/screencapture_01.webm" target="_blank">
+        <img src="https://github.com/condoweb/open-depot/blob/main/mockup/screencapture_01.gif?raw=true" alt="preview" width=50% height=50%>
+        GO TO HD Video
       </a>
+      <img width="1000" height="1">
     </td>
     <td style="text-align:center; width:50%;">
       <a href="https://condoweb.github.io/open-depot/mockup/screencapture_02.webm" target="_blank">
-        <img width="1000" height="1">
-        <img src="https://condoweb.github.io/open-depot/mockup/screencapture_02.gif" style="width:100%;" alt="Video 2">
-        <p>GO TO HD Video</p>
+        <img src="https://github.com/condoweb/open-depot/blob/main/mockup/screencapture_02.gif?raw=true" alt="preview" width=50% height=50%>
+        GO TO HD Video
       </a>
+      <img width="1000" height="1">
     </td>
   </tr>
 </table>
