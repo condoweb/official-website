@@ -28,7 +28,7 @@
                     <div class="§grid §radius-small-top">
                         <div class="columnContent desktop-50 mobile-50 compact-100">
                             <div class="§radius-small-top-left">
-                                <img class="§toBkg-cover §radius-small-top" height="250" src="https://monte.files.wordpress.com/2008/02/palazzo_prefettura.jpg" />
+                                <img class="§toBkg-cover §radius-small-top" height="250" src="<?php echo "http://" . $_SERVER['SERVER_NAME']; ?>/media/image/demo/democondominio.jpeg" />
                                 <p class="§radius-small pad-4" style="position:absolute; top:0; margin: 20px 0 0 20px; background-color: rgba(110, 155, 153, 0.5); background: rgba(110, 155, 153, 0.5); color: white;">&nbsp;ID&nbsp;208&nbsp;</p>
                             </div>
                         </div>

@@ -41,7 +41,7 @@
                             <div class="columnContent desktop-25 mobile-33 compact-100">
                                 <div class="§panel §radius-medium">
                                     <div class="§fill-line §radius-small">
-                                        <img class="§toBkg-cover §radius-small-top" height="150" src="https://monte.files.wordpress.com/2008/02/palazzo_prefettura.jpg" />
+                                        <img class="§toBkg-cover §radius-small-top" height="150" src="<?php echo "http://" . $_SERVER['SERVER_NAME']; ?>/media/image/demo/democondominio.jpeg" />
                                     </div>
                                     <div class="section-group pad-small §text-center">
                                         <h3>Villa Cesare</h3>

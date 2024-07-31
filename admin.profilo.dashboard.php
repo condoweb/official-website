@@ -38,7 +38,7 @@
                                         <h5>SPOTLIGHT</h5>
                                     </div>
                                     <div class="section-group pad-small §text-center">
-                                        <img  class="§toBkg-cover §radius-small-top" height="350" src="http://www.banknoise.com/wp-content/uploads/2010/04/bot_rendimento_20100412.jpg" />
+                                        <img  class="§toBkg-cover §radius-small-top" height="350" src="<?php echo "http://" . $_SERVER['SERVER_NAME']; ?>/media/image/demo/demorendimento.jpeg" />
                                         <!--GRAFICO SPESE/UTENZETOTALI/MESSAGGI RICEVUTI/KBUSATI-->
                                     </div>
                                 </div>

@@ -23,25 +23,25 @@
                 <p>condoweb page</p>
                 <ul>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/sitemap.php">condoweb > sitemap</a>
+                        <a target='_black'  href="sitemap.php">condoweb > sitemap</a>
                     </li>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/testpage.php">condoweb > testpage</a>
+                        <a target='_black'  href="testpage.php">condoweb > testpage</a>
                     </li>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/index.php">condoweb > index</a>
+                        <a target='_black'  href="index.php">condoweb > index</a>
                     </li>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/condoweb.accesso.php">condoweb > accesso utente/admin (+recuperopass)</a>
+                        <a target='_black'  href="condoweb.accesso.php">condoweb > accesso utente/admin (+recuperopass)</a>
                     </li>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/condoweb.cerca.php">condoweb > cerca qualcosa</a>
+                        <a target='_black'  href="condoweb.cerca.php">condoweb > cerca qualcosa</a>
                     </li>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/condoweb.condominio.php">condoweb > condominio</a>
+                        <a target='_black'  href="condoweb.condominio.php">condoweb > condominio</a>
                     </li>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/condoweb.profiloutente.php">condoweb > utente</a>
+                        <a target='_black'  href="condoweb.profiloutente.php">condoweb > utente</a>
                     </li>
                 </ul>
                 
@@ -49,66 +49,66 @@
                 <p>dash admin</p>
                 <ul>
                     <li>
-                        <a target='_black' href="http://localhost/condoweb_V3/admin.listacondomini.php">Lista condomini (admin home)</a>
+                        <a target='_black' href="admin.listacondomini.php">Lista condomini (admin home)</a>
                     </li>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/admin.gestionecondominio.php">Lista condomini / Gestione condominio</a>
+                        <a target='_black'  href="admin.gestionecondominio.php">Lista condomini / Gestione condominio</a>
                     </li>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/admin.gestionedocumenti.php">Lista condomini / Gestione condominio / documenti</a>
+                        <a target='_black'  href="admin.gestionedocumenti.php">Lista condomini / Gestione condominio / documenti</a>
                     </li>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/admin.gestionespese.php">Lista condomini / Gestione condominio / spese</a>
+                        <a target='_black'  href="admin.gestionespese.php">Lista condomini / Gestione condominio / spese</a>
                     </li>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/admin.gestioneutilita.php">Lista condomini / Gestione condominio / utilità</a>
+                        <a target='_black'  href="admin.gestioneutilita.php">Lista condomini / Gestione condominio / utilità</a>
                     </li>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/admin.listautenti.php">Lista condomini / Gestione condominio / lista utenti</a>
+                        <a target='_black'  href="admin.listautenti.php">Lista condomini / Gestione condominio / lista utenti</a>
                     </li>
                 </ul>
                 <hr/>
                 <p>Profilo admin</p>
                 <ul>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/admin.profilo.dashboard.php">admin dashboard (profile home)</a>
+                        <a target='_black'  href="admin.profilo.dashboard.php">admin dashboard (profile home)</a>
                     </li>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/admin.profilo.datiutente.php">admin datiutente </a>
+                        <a target='_black'  href="admin.profilo.datiutente.php">admin datiutente </a>
                     </li>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/admin.profilo.segretariato.php">admin segretariato </a>
+                        <a target='_black'  href="admin.profilo.segretariato.php">admin segretariato </a>
                     </li>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/admin.profilo.messaggi.php">admin messaggi </a>
+                        <a target='_black'  href="admin.profilo.messaggi.php">admin messaggi </a>
                     </li>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/admin.profilo.opzionisito.php">admin opzioni sito </a>
+                        <a target='_black'  href="admin.profilo.opzionisito.php">admin opzioni sito </a>
                     </li>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/admin.profilo.cestino.php">admin opzioni data </a>
+                        <a target='_black'  href="admin.profilo.cestino.php">admin opzioni data </a>
                     </li>
                 </ul>
                 <hr/>
                 <p>dash utente</p>
                 <ul>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/user.home.php">user home (profile home)</a>
+                        <a target='_black'  href="user.home.php">user home (profile home)</a>
                     </li>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/user.datiutente.php">user home > dati utente</a>
+                        <a target='_black'  href="user.datiutente.php">user home > dati utente</a>
                     </li>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/user.documenti.php">user home > user documenti</a>
+                        <a target='_black'  href="user.documenti.php">user home > user documenti</a>
                     </li>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/user.spese.php">user home > user spese</a>
+                        <a target='_black'  href="user.spese.php">user home > user spese</a>
                     </li>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/user.linkutili.php">user home > user link utili</a>
+                        <a target='_black'  href="user.linkutili.php">user home > user link utili</a>
                     </li>
                     <li>
-                        <a target='_black'  href="http://localhost/condoweb_V3/user.programmiutili.php">user home > user programmi utili</a>
+                        <a target='_black'  href="user.programmiutili.php">user home > user programmi utili</a>
                     </li>
                 </ul>
 

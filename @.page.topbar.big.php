@@ -19,7 +19,7 @@
                     <div class="§grid gridSpace-20 homeLogo">
                         <div class="columnContent desktop-25 mobile-25 compact-100">
                             <a class="loaderOut" style="background:none !important; margin: 0; padding: 0;" href="index.php">
-                                <img style="padding:10px; max-width: 100%;" src="media/image/design/logoBig.png" alt="Condoweb - benvenuti sul sito ufficiale per amministrare i condomini" />
+                                <img style="padding:10px; max-height:88px; width: auto;" src="media/image/design/logoBig.png" alt="Condoweb - benvenuti sul sito ufficiale per amministrare i condomini" />
                             </a>
                         </div>
                         <div class="columnContent desktop-75 mobile-75 compact-0">
