@@ -6,6 +6,11 @@ This space is an old space of official static site of condoweb stratup project
 
 ---
 
+<b>we sugget to open the page list: `http://yourhost/pagemap.php`</b><br>
+<img  src="https://raw.githubusercontent.com/condoweb/open-depot/main/mockup/screenshot_01.jpg">
+
+---
+
 some screenshots:
 
 <img  src="https://raw.githubusercontent.com/condoweb/open-depot/main/mockup/screenshot_01.jpg">
