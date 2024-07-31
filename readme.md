@@ -15,18 +15,19 @@ This space is an old space of official static site of condoweb stratup project
 
 some other videos and screenshots:<br>
 
+
 <table>
   <tr>
     <td style="text-align:center; width:50%;">
       <a href="https://condoweb.github.io/open-depot/mockup/screencapture_01.webm" target="_blank">
-        <img src="https://github.com/condoweb/open-depot/blob/main/mockup/screencapture_01.gif?raw=true" alt="preview" width=50% height=50%>
+        <img src="https://github.com/condoweb/open-depot/blob/main/mockup/screencapture_01.gif?raw=true" alt="preview" width=100% >
         GO TO HD Video
       </a>
       <img width="1000" height="1">
     </td>
     <td style="text-align:center; width:50%;">
       <a href="https://condoweb.github.io/open-depot/mockup/screencapture_02.webm" target="_blank">
-        <img src="https://github.com/condoweb/open-depot/blob/main/mockup/screencapture_02.gif?raw=true" alt="preview" width=50% height=50%>
+        <img src="https://github.com/condoweb/open-depot/blob/main/mockup/screencapture_02.gif?raw=true" alt="preview" width=100% >
         GO TO HD Video
       </a>
       <img width="1000" height="1">
