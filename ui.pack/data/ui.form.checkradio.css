@@ -1,0 +1,536 @@
+
+/*
+BUTTON SETTING
+*/
+
+/*general setting*/
+*[class^="§checkbox"],
+*[class^="§radiobox"]{
+    display: inline-block !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+    letter-spacing: normal !important;
+    font-weight: bold !important;
+    line-height: 1.25em !important;
+    font-style: inherit !important;
+    transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+}
+
+/*TYPE*//*slide-mini*/
+.§checkbox-slide-mini,
+.§radiobox-slide-mini{
+    width: 50px;
+    height: 10px;
+    position: relative;
+}
+.§checkbox-slide-mini label,
+.§radiobox-slide-mini label {
+    display: block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    border-width: 2.5px;
+    border-style: solid;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    transition: all .4s ease;
+}
+.§checkbox-slide-mini input[type="checkbox"]:checked + label,
+.§radiobox-slide-mini input[type="radio"]:checked + label {
+    left: 37px;
+}
+/**//*slide-mini correzione nei gruppi*/
+.§button-group > .§checkbox-slide-mini,
+.§button-group > .§radiobox-slide-mini{
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+/*TYPE*//*slide-medium*/
+.§checkbox-slide-medium,
+.§radiobox-slide-medium{
+    width: 80px;
+    height: 31px;
+    position: relative;
+}
+.§checkbox-slide-medium:after,
+.§radiobox-slide-medium:after {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    height: 2px;
+    width: 52px;
+}
+.§checkbox-slide-medium label,
+.§radiobox-slide-medium label{
+    display: block;
+    width: 22px;
+    height: 22px;
+    transition: all .4s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 4px;
+    z-index: 1;
+    left: 4px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+}
+.§checkbox-slide-medium label:after,
+.§radiobox-slide-medium label:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 6px;
+    top: 6px;
+}
+.§checkbox-slide-medium input[type=checkbox]:checked + label,
+.§radiobox-slide-medium input[type=radio]:checked + label {
+    left: 54px;
+}
+/**//*slide-medium correzione nei gruppi*/
+.§button-group > .§checkbox-slide-medium label,
+.§button-group > .§radiobox-slide-medium label{
+    margin-left: 8px !important;
+}
+.§button-group > .§checkbox-slide-medium input[type=checkbox]:checked + label,
+.§button-group > .§radiobox-slide-medium input[type=radio]:checked + label {
+    left: 42px;
+}
+
+/*TYPE*//*slide-big*/
+.§checkbox-slide-big,
+.§radiobox-slide-big{
+    width: 80px;
+    height: 31px;
+    position: relative;
+}
+.§checkbox-slide-big:after,
+.§radiobox-slide-big:after{
+    content: 'OFF';
+    font: 12px Arial, sans-serif;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    z-index: 0;
+    font-weight: bold;
+}
+.§checkbox-slide-big:before,
+.§radiobox-slide-big:before{
+    content: 'ON';
+    font: 12px Arial, sans-serif;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    z-index: 0;
+    font-weight: bold;
+}
+
+.§checkbox-slide-big label,
+.§radiobox-slide-big label{
+    display: block;
+    width: 40px;
+    height: 26px;
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    z-index: 1;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    transition: all .4s ease;
+}
+.§checkbox-slide-big input[type=checkbox]:checked + label,
+.§radiobox-slide-big input[type=radio]:checked + label{
+    left: 37px;
+}
+/**//*slide-big correzione nei gruppi*/
+.§button-group > .§checkbox-slide-big:after,
+.§button-group > .§radiobox-slide-big:after{
+    right: 10px !important;
+}
+.§button-group > .§checkbox-slide-big:before,
+.§button-group > .§radiobox-slide-big:before{
+    left: 13px !important;
+}
+.§button-group > .§checkbox-slide-big label,
+.§button-group > .§radiobox-slide-big label{
+    left: 3px;
+}
+.§button-group > .§checkbox-slide-big input[type=checkbox]:checked + label,
+.§button-group > .§radiobox-slide-big input[type=radio]:checked + label{
+    left: 36px;
+}
+
+/*TYPE*//*round-light*/
+.§checkbox-round-light,
+.§radiobox-round-light {
+    width: 31px;
+    height: 31px;
+    position: relative;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.§checkbox-round-light label,
+.§radiobox-round-light label {
+    cursor: pointer;
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 4px;
+    top: 4px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.§checkbox-round-light label:after,
+.§radiobox-round-light label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: 3px;
+    left: 3px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.§checkbox-round-light label:hover::after,
+.§radiobox-round-light label:hover::after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+}
+.§checkbox-round-light input[type=checkbox]:checked + label:after,
+.§radiobox-round-light input[type=radio]:checked + label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+/**//*round-light correzione nei gruppi*/
+.§button-group > .§checkbox-round-light,
+.§button-group > .§radiobox-round-light{
+    width: 36px;
+    box-shadow: none;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.§button-group > .§checkbox-round-light label,
+.§button-group > .§radiobox-round-light label{
+    left: 6px;    
+}
+
+/*TYPE*//*round-check*/
+.§checkbox-round-check,
+.§radiobox-round-check {
+    width: 31px;
+    height: 31px;
+    position: relative;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.§checkbox-round-check label,
+.§radiobox-round-check label {
+    cursor: pointer;
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 4px;
+    top: 4px;
+   -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.§checkbox-round-check label:after,
+.§radiobox-round-check label:after {
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 6px;
+    background: transparent;
+    top: 5px;
+    left: 4px;
+    border: 4px solid;
+    border-top: none;
+    border-right: none;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.§checkbox-round-check label:hover::after,
+.§radiobox-round-check label:hover::after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+}
+.§checkbox-round-check input[type=checkbox]:checked + label:after,
+.§radiobox-round-check input[type=radio]:checked + label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+/**//*round-check correzione nei gruppi*/
+.§button-group > .§checkbox-round-check,
+.§button-group > .§radiobox-round-check{
+    width: 36px;
+    box-shadow: none;
+}
+.§button-group > .§checkbox-round-check label,
+.§button-group > .§radiobox-round-check label{
+    left: 6px;    
+}
+
+/*TYPE*//*square-light*/
+.§checkbox-square-light,
+.§radiobox-square-light{
+    width: 31px;
+    height: 31px;
+    position: relative;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.§checkbox-square-light label,
+.§radiobox-square-light label {
+    cursor: pointer;
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 4px;
+    top: 4px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.§checkbox-square-light label:after,
+.§radiobox-square-light label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: 3px;
+    left: 3px;
+
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.§button-group > .§checkbox-square-light label,
+.§button-group > .§radiobox-square-light label{
+    left: 6px;    
+}
+.§checkbox-square-light label:hover::after,
+.§radiobox-square-light label:hover::after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+}
+.§checkbox-square-light input[type=checkbox]:checked + label:after,
+.§radiobox-square-light input[type=radio]:checked + label:after{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+/**//*square-light correzione nei gruppi*/
+.§button-group > .§checkbox-square-light,
+.§button-group > .§radiobox-square-light{
+    width: 36px;
+    border-right: 1px solid #ccc !important;
+    box-shadow: none;
+}
+
+/*TYPE*//*square-check*/
+.§checkbox-square-check,
+.§radiobox-square-check{
+    width: 31px;
+    height: 31px;
+    position: relative;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.§checkbox-square-check label,
+.§radiobox-square-check label{
+    cursor: pointer;
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 4px;
+    top: 4px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.§checkbox-square-check label:after,
+.§radiobox-square-check label:after{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 6px;
+    top: 5px;
+    left: 4px;
+    background: transparent;
+    border: 3px solid;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.§checkbox-square-check label:hover::after,
+.§radiobox-square-check label:hover::after{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+}
+.§checkbox-square-check input[type=checkbox]:checked + label:after,
+.§radiobox-square-check input[type=radio]:checked + label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+/**//*square-check correzione nei gruppi*/
+.§button-group > .§checkbox-square-check,
+.§button-group > .§radiobox-square-check{
+    width: 36px;
+    box-shadow: none;
+}
+.§button-group > .§checkbox-square-check label,
+.§button-group > .§radiobox-square-check label{
+    left: 6px;    
+}
+
+/*TYPE*//*check-in*/
+.§checkbox-mini-check,
+.§radiobox-mini-check{
+    width: 20px;
+    position: relative;
+}
+.§checkbox-mini-check label,
+.§radiobox-mini-check label{
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.§checkbox-mini-check label:after,
+.§radiobox-mini-check label:after{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: transparent;
+    top: 4px;
+    left: 4px;
+    border: 3px solid #7DA7C0;
+    border-top: none;
+    border-right: none;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.§radiobox-mini-check label:hover::after{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+}
+.§checkbox-mini-check input[type=checkbox]:checked + label:after,
+.§radiobox-mini-check input[type=radio]:checked + label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+/*non presente*//*square-check correzione nei gruppi*/
+
+/*TYPE*//*check-out*/
+.§checkbox-mini-light,
+.§radiobox-mini-light{
+    width: 20px;	
+    margin: 20px auto;
+    position: relative;
+}
+.§checkbox-mini-light label,
+.§radiobox-mini-light label {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.§checkbox-mini-light label:after,
+.§radiobox-mini-light label:after{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 3px;
+    left: 3px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.§checkbox-mini-light label:hover::after,
+.§radiobox-mini-light label:hover::after{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.5;
+}
+.§checkbox-mini-light input[type=checkbox]:checked + label:after,
+.§radiobox-mini-light input[type=radio]:checked + label:after{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+/*non presente*//*square-check correzione nei gruppi*/

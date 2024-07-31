@@ -1,0 +1,71 @@
+
+/*
+CSS PANEL SETTING
+*/
+
+
+/*§PANEL DESIGN*/
+.§panel-alert:hover, .§panel-alarm:hover, .§panel-pass:hover{animation-name:stopxxxxx;}
+*[class^="§panel"] { border: 1px solid; }
+
+/*PANEL SECTION DESIGN*/
+*[class^="§panel"] .section{ 
+     border-top: 1px solid;
+     border-bottom: 1px solid;
+}
+*[class^="§panel"] .section-group{ 
+     border-top-width: 1px;
+     border-top-style: solid;
+     border-left: 0px;
+     border-right: 0px;
+     border-bottom: 0px;
+}
+
+.pad-micro .section,
+.pad-micro .section-group	   { margin-right: -4px; margin-left: -4px; }
+.pad-small .section,
+.pad-small .section-group	   { margin-right: -10px; margin-left: -10px; }
+.pad-medium .section,
+.pad-medium .section-group	   { margin-right: -25px; margin-left: -25px; }
+.pad-big .section,
+.pad-big .section-group            { margin-right: -37px; margin-left: -37px; }
+.pad-large .section,
+.pad-large .section-group	   { margin-right: -45px; margin-left: -45px; }
+
+*[class^="§panel"]> h1,
+*[class^="§panel"]> h2,
+*[class^="§panel"]> h3,
+*[class^="§panel"]> h4,
+*[class^="§panel"]> h5,
+*[class^="§panel"]> h6,
+*[class^="§panel"]> h7,
+*[class^="§panel"]> p,
+*[class^="§panel"]> i,
+*[class^="§panel"]> b,
+*[class^="§panel"]> strong,
+*[class^="§panel"]> a,
+*[class^="§section"]> h1,
+*[class^="§section"]> h2,
+*[class^="§section"]> h3,
+*[class^="§section"]> h4,
+*[class^="§section"]> h5,
+*[class^="§section"]> h6,
+*[class^="§section"]> h7,
+*[class^="§section"]> p,
+*[class^="§section"]> i,
+*[class^="§section"]> b,
+*[class^="§section"]> strong,
+*[class^="§section"]> a,
+*[class^="§section-group"]> h1,
+*[class^="§section-group"]> h2,
+*[class^="§section-group"]> h3,
+*[class^="§section-group"]> h4,
+*[class^="§section-group"]> h5,
+*[class^="§section-group"]> h6,
+*[class^="§section-group"]> h7,
+*[class^="§section-group"]> p,
+*[class^="§section-group"]> i,
+*[class^="§section-group"]> b,
+*[class^="§section-group"]> strong,
+*[class^="§section-group"]> a
+{ margin: 0 ; }

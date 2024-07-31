@@ -1,0 +1,77 @@
+
+/*
+CSS STATUS SETTING
+*/
+
+.§error-borded{
+    border-color: #f00 !important;
+}
+.§error-bkged, .§error-bkged>*{color: #FFF !important;}
+.§error-bkged{
+    border-color: #770a0a !important;
+    background-color: #c60000;
+    box-shadow: inset 0 0 30px #770a0a, 0 0 1px  #770a0a !important;
+    animation-name: error;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}   @keyframes error {
+    0% { background-color:  #c60000; text-shadow: 0px 0px 3px #fff !important; }
+    25% { background-color:  #ff0000; text-shadow: 0px 0px 3px #000 !important; }
+    50% { background-color:  #c60000; text-shadow: 0px 0px 3px #fff !important; }
+    75% { background-color:  #ff0000; text-shadow: 0px 0px 3px #fff !important; }
+    100% { background-color:  #c60000; text-shadow: 0px 0px 3px #fff !important; }
+    }
+.§error-bkged:hover,.§error-bkged:focus{
+     background-color:  #c60000 !important;
+     box-shadow: inset 0 0 30px #770a0a, 0 0 1px  #770a0a !important;
+}
+    
+    
+.§alarm-borded{
+    border-color: #e79014 !important;
+}
+.§alarm-bkged,.§alarm-bkged>*{color: #000 !important;}
+.§alarm-bkged{
+    border-color: #e79014 !important;
+    background-color: #f4d615;
+    box-shadow: inset 0 0 30px #f4d615, 0 0 1px  #e79014 !important;
+    animation-name: alarm;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}   @keyframes alarm {
+    0% { background-color:  #e79014; }
+    40% { background-color:  #ffcc66; }
+    70% { background-color:  #ffcc66; }
+    100% { background-color:  #e79014; }
+    }
+.§alarm-bkged:hover,.§alarm-bkged:focus{
+     background-color:  #f4d615 !important;
+     box-shadow: inset 0 0 30px #f4d615, 0 0 1px  #e79014 !important;
+}
+    
+.§pass-borded{
+    border-color: #98af10 !important;
+}
+.§pass-bkged,.§pass-bkged>*{}
+.§pass-bkged{
+     border-color: #98af10 !important;
+     background-color:  #cceeb4;
+     box-shadow: inset 0 0 30px #cceeb4, 0 0 1px  #cceeb4 !important;
+     animation-name: pass;
+     animation-duration: 4s;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+     animation-timing-function: ease-in-out;
+}   @keyframes pass {
+    0% { background-color:  #98af10; }
+    50% { background-color:  #cceeb4; }
+    100% { background-color:  #98af10; }
+    }
+.§pass-bkged:hover,.§pass-bkged:focus{
+     background-color:  #cceeb4 !important;
+     box-shadow: inset 0 0 30px #cceeb4, 0 0 1px  #cceeb4 !important;
+}

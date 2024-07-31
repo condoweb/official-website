@@ -1,0 +1,472 @@
+/*/////////////////////////////////////////////////////
+  ++ CSS THEME SETTING
+  ++ www.pixostudios.com/codex/gui/gui.php
+//////////////////////////////////////////////////////
+  [info]
+  imposta i colori ed altro della UI
+/////////////////////////////////////////////////////*/
+
+/*STATIC TYPOGRAPHY THEME*/
+body{
+    color: black;
+    font-family: "nexa_lightregular";
+    letter-spacing: 0px;
+}
+
+
+a{
+    color: black;
+}
+a:hover{
+    color: black;
+}
+a.focus,a:focus{
+    color: black;
+}
+
+.§panel, .section, .section-group, blockquote{
+    background: #fff;
+    border-width:2px; 
+    border-color: #ccc;
+}
+
+
+*[class^="§table"] tr,
+*[class^="§table"] td,
+*[class^="§table"] th{
+    background: #fff;
+    border-color: #ccc !important;
+}
+
+a.§button, *[class^="§button"]:not(.§button-group) {
+    /* dimensione */
+    padding: 12px 24px;
+    font-size: 12px;
+    /* stile */
+    color: #17435a;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    background: #fff;
+    box-shadow: 0 1px 3px #ccc;
+}
+textarea.§button:active,
+input.§button[type="text"]:active,
+input.§button[type="password"]:active,
+*[class^="§button"]:not(.§button-group):not(textarea):active,
+*[class^="§button"]:not(.§button-group):not(textarea):hover,
+*[class^="§button"].focus{
+    /* dimensione */
+    padding: 12px 24px;
+    font-size: 12px;
+    /* stile */
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    background: #fff;
+    box-shadow: 0 2px 3px #eaeaea, inset 0 0 5px #ccc;
+}
+.§button-group,.§button-group:hover, .§button-group:active, .§button-group:focus{
+    /*stile*/
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    background: #fff !important;
+}
+@media only screen and (max-width:992px) {
+    /*se i pulsanti hanno dei bordini allora...*/
+    .§button-group>* {
+        border-bottom: 1px solid #ccc !important;
+    }
+
+    .§button-group>*[class^="§checkbox-"]+*[class^="§button"] {
+        border-top: 1px solid #ccc !important;
+    }
+}
+.§btn-separator {
+    /*dimensione*/
+    margin: 0 12px 0 4px;
+    /*stile*/
+    border-left-width: 3px;
+    border-style: dotted;
+}
+.§arrow,.§overlay {
+    /*grandezza destra*/
+    padding-right: 12px !important;
+}
+.§arrow:after,
+.§overlay:after{
+    /*dimensione sinistra*/
+    margin-left: 10px !important;
+    padding-left: 10px !important;
+    /*stile*/
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-color: #ccc;
+    /*
+    se vuoi la linea verticale estesa...
+    padding-top: 10px; padding-bottom: 10px;
+    */
+}
+
+.§close, .§close:hover, .§close:active{
+    /*dimensione*/
+    padding: 8px 9px 7px 9px !important;
+    /*stile*/
+    border-width: 5px !important;
+    border-style: solid;
+    border-color: #ccc;
+    background: #17435a;
+}
+.§close-right {
+    padding-right: 15px !important;
+}
+.§close-right:after {
+    /*dimensione sinistra*/
+    margin-left: 12px;
+    padding-left: 12px;
+    /*stile*/
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-color: #ccc;
+    /*
+    se vuoi la linea verticale estesa...
+    padding-top: 10px; padding-bottom: 10px;
+    */
+}
+.§close-left {
+    padding-left: 15px !important;
+    border-color: #ccc;
+}
+.§close-left:before {
+    /*dimensione destra*/
+    margin-right: 12px;
+    padding-right: 12px;
+    /*stile*/
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-color: #ccc;
+    /*
+    se vuoi la linea verticale estesa...
+    padding-top: 10px; padding-bottom: 10px;
+    */
+}
+.§checkbox-slide-big:before,
+.§radiobox-slide-big:before {
+    color: #55888c;
+}
+
+.§checkbox-slide-mini input[type="checkbox"]:checked + label,
+.§radiobox-slide-mini input[type="radio"]:checked + label,
+.§checkbox-slide-medium input[type=checkbox]:checked + label:after,
+.§radiobox-slide-medium input[type=radio]:checked + label:after,
+.§checkbox-round-light label:after,
+.§radiobox-round-light label:after,
+.§checkbox-square-light label:after,
+.§radiobox-square-light label:after {
+    background: #3e6e96;
+}
+
+.§checkbox-round-check label:after,
+.§radiobox-round-check label:after,
+.§checkbox-square-check label:after,
+.§radiobox-square-check label:after,
+.§checkbox-mini-check label:after,
+.§radiobox-mini-check label:after,
+.§checkbox-mini-light label:after,
+.§radiobox-mini-light label:after {
+    border-color: #55888c;
+}
+
+.§checkbox-slide-mini label,
+.§radiobox-slide-mini label,
+.§checkbox-slide-medium label,
+.§radiobox-slide-medium label,
+.§checkbox-slide-big label,
+.§radiobox-slide-big label,
+.§checkbox-round-light,
+.§radiobox-round-light,
+.§checkbox-round-check,
+.§radiobox-round-check,
+.§checkbox-square-light,
+.§radiobox-square-light,
+.§checkbox-square-check,
+.§radiobox-square-check,
+.§checkbox-mini-check label,
+.§radiobox-mini-check label,
+.§checkbox-mini-light label,
+.§radiobox-mini-light label {
+    background: #ffffff;
+}
+
+/*correzione nel gruppo ( se c'è il bordino... )*/
+.§button-group > .§checkbox-round-check,
+.§button-group > .§radiobox-round-check,
+.§button-group > .§checkbox-round-light,
+.§button-group > .§radiobox-round-light
+.§button-group > .§checkbox-square-light,
+.§button-group > .§radiobox-square-light,
+.§button-group > .§checkbox-square-check,
+.§button-group > .§radiobox-square-check{
+    border-right: 1px solid #ccc !important;
+}
+
+/*elementi singoli*/
+/*slide-mini*/
+.§checkbox-slide-mini,
+.§radiobox-slide-mini{
+    -webkit-border-radius:  2px;
+    -moz-border-radius:     2px;
+    border-radius:          2px;
+    box-shadow:             0 1px 6px #ccc inset;
+    background:             #eee; /*bkg della linea su cui scorre il puntino*/
+}
+.§checkbox-slide-mini label,
+.§radiobox-slide-mini label {
+    -webkit-border-radius:  2px;
+    -moz-border-radius:     2px;
+    border-radius:          2px;
+    border-color:           #333; /*bordo del puntino*/
+}
+
+/*slide-medium*/
+.§checkbox-slide-medium,
+.§radiobox-slide-medium{
+    -webkit-border-radius:  2px;
+    -moz-border-radius:     2px;
+    border-radius:          2px;
+    background:             #eeeeee;/*bkg a riposo (contenitore)*/
+    box-shadow:             0 1px 6px #ccc inset;
+}
+.§checkbox-slide-medium:after,
+.§radiobox-slide-medium:after {    
+    -webkit-border-radius:  2px;
+    -moz-border-radius:     2px;
+    border-radius:          2px;
+    background:             #eeeeee;/*bkg della linea su cui scorre il puntino*/
+    box-shadow:             0 1px 6px #ccc inset;
+}
+.§checkbox-slide-medium label,
+.§radiobox-slide-medium label{
+    -webkit-border-radius:  2px;
+    -moz-border-radius:     2px;
+    border-radius:          2px;
+    -webkit-box-shadow:     0px 2px 3px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow:        0px 2px 3px 0px rgba(0,0,0,0.3);
+    box-shadow:             0px 2px 3px 0px rgba(0,0,0,0.3);
+}
+.§checkbox-slide-medium label:after,
+.§radiobox-slide-medium label:after {
+    -webkit-border-radius:  2px;
+    -moz-border-radius:     2px;
+    border-radius:          2px;
+    -webkit-box-shadow:     inset 0px 1px 1px rgba(0,0,0,1), 0px 1px 0px rgba(255,255,255,0.9);
+    -moz-box-shadow:        inset 0px 1px 1px rgba(0,0,0,1), 0px 1px 0px rgba(255,255,255,0.9);
+    box-shadow:             inset 0px 1px 1px rgba(0,0,0,1), 0px 1px 0px rgba(255,255,255,0.9);
+    background:             #333;/*bkg del puntino a riposo*/
+}
+
+/*slider big*/
+.§checkbox-slide-big,
+.§radiobox-slide-big{
+    -webkit-border-radius:  2px;
+    -moz-border-radius:     2px;
+    border-radius:          2px;
+    background:             #eeeeee;/*bkg a riposo (contenitore)*/
+    box-shadow:             0 1px 6px #ccc inset;
+}
+.§checkbox-slide-big:after,
+.§radiobox-slide-big:after{
+    color:                  #999;/*colore scritta "OFF"*/
+    text-shadow:            1px 1px 0px rgba(255,255,255,.15);
+}
+.§checkbox-slide-big label,
+.§radiobox-slide-big label{
+   -webkit-border-radius:   2px;
+    -moz-border-radius:     2px;
+    border-radius:          2px;
+    -webkit-box-shadow:     0px 2px 3px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow:        0px 2px 3px 0px rgba(0,0,0,0.3);
+    box-shadow:             0px 2px 3px 0px rgba(0,0,0,0.3);
+}
+.§button-group > .§checkbox-slide-big label,
+.§button-group > .§radiobox-slide-big label{
+    -webkit-border-radius:  2px;
+    -moz-border-radius:     2px;
+    border-radius:          2px;
+}
+
+/*round light*/
+.§checkbox-round-light,
+.§radiobox-round-light {
+    -webkit-box-shadow:     inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow:        inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    box-shadow:             inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+}
+.§checkbox-round-light label,
+.§radiobox-round-light label {
+    background:             #eeeeee;/*bkg di fondo*/
+    box-shadow:             0 1px 6px #ccc inset;
+}
+
+
+/*round check*/
+.§checkbox-round-check,
+.§radiobox-round-check {
+    -webkit-box-shadow:     inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow:        inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    box-shadow:             inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+}
+.§checkbox-round-check label,
+.§radiobox-round-check label {
+    background: #eeeeee;
+    box-shadow: 0 1px 6px #ccc inset;
+}
+
+/*square light*/
+.§checkbox-square-light,
+.§radiobox-square-light{
+    -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+}
+.§checkbox-square-light label,
+.§radiobox-square-light label {
+    background: #eeeeee;/*bkg di fondo*/
+    box-shadow: 0 1px 6px #ccc inset;
+}
+
+/*square check*/
+.§checkbox-square-check,
+.§radiobox-square-check{
+    -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+}
+.§checkbox-square-check label,
+.§radiobox-square-check label{
+    background: #eeeeee;/*bkg di fondo della checkbox*/
+    box-shadow: 0 1px 6px #ccc inset;
+}
+/*check mini (in)*/
+.§checkbox-mini-check label,
+.§radiobox-mini-check label{
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+    -moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+}
+/*check mini (out)*/
+.§checkbox-mini-light label,
+.§radiobox-mini-light label {
+    -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+}
+.§checkbox-mini-light label:after,
+.§radiobox-mini-light label:after {
+    -webkit-border-radius:  2px;
+    -moz-border-radius:     2px;
+    border-radius:          2px;
+    -webkit-box-shadow:     inset 0px 1px 1px rgba(0,0,0,1), 0px 1px 0px rgba(255,255,255,0.9);
+    -moz-box-shadow:        inset 0px 1px 1px rgba(0,0,0,1), 0px 1px 0px rgba(255,255,255,0.9);
+    box-shadow:             inset 0px 1px 1px rgba(0,0,0,1), 0px 1px 0px rgba(255,255,255,0.9);
+    background:             #55888c;/*bkg del puntino a riposo*/
+}
+
+
+ /*BREADCRUMBS SETTING*/
+*[class^="§breadcrumbs-"] a {
+    font-size: 12px;
+    line-height: 36px;
+    padding: 0px 10px 0px 60px !important;
+}
+*[class^="§breadcrumbs-"] a:first-child {
+    padding-left: 36px;
+}
+*[class^="§breadcrumbs-"] a:first-child:before {
+    left: 14px;
+}
+*[class^="§breadcrumbs-"] a:last-child {
+    padding-right: 20px !important;
+}
+/*bread arrow*/
+*[class^="§breadcrumbs-"] a:after {
+    right: -18px; 
+    width: 36px; 
+    height: 36px;
+    border-radius: 0 5px 0 20px;
+}
+*[class^="§breadcrumbs-"] a:last-child:after { content: none; }
+*[class^="§breadcrumbs-"] a:before {
+    /*border-radius: 100%; attiva se vuoi che i numeri diventino parentesi*/
+    width: 10px;
+    height: 5px;
+    padding: 0px 3px 15px 7px;
+    line-height: 20px;
+    margin: 8px 0;
+    left: 35px;
+    font-weight: bold;
+}
+/*classic style*/
+.§breadcrumbs-classic{
+    border: 1px solid #ccc;
+}
+.§breadcrumbs-classic a, .§breadcrumbs-classic a:after {
+    
+    background: white;
+    transition: all 0.5s;
+    box-shadow: #dce7f0 3px -3px 2px;
+}
+.§breadcrumbs-classic a:before {
+    border-right: 1px dotted #ccc; 
+}
+.§breadcrumbs-classic a:hover, .§breadcrumbs-classic a.active, 
+.§breadcrumbs-classic a:hover:after, .§breadcrumbs-classic a.active:after{
+    color: white;
+    background: #17435a;
+}
+
+*[class^="§nav-list"]>li{
+    padding: 8px;
+}
+*[class^="§nav-list"]+*[class^="§nav-list"]{
+    border-bottom: 1px solid #ccc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.tabsList>li>a{
+    background: #17435a ;
+    color: white !important;
+    padding: 10px;
+}
+.tabsList>li>a:hover{
+    background: #77b1ce !important;
+    color: white !important;
+    padding: 10px;
+}
+.tab_active{
+    background: #4983a4 !important;
+}
+
+.§paginate .pagelist{
+    float: left;
+    border: 1px solid #ccc;
+}
+.§paginate .controlleft>a:first-child,
+.§paginate .controlleft>a:last-child,
+.§paginate .controlright>a:first-child,
+.§paginate .controlright>a:last-child,
+.§paginate .pagelist ul>li>a{
+    padding: 5px 10px 5px 10px;
+    background: #fff;
+}
+.§paginate .controlleft>a:first-child:hover,
+.§paginate .controlleft>a:last-child:hover,
+.§paginate .controlright>a:first-child:hover,
+.§paginate .controlright>a:last-child:hover,
+.§paginate .pagelist ul>li>a:hover,
+.pagelist ul>li>a.active{
+    color: #fff;
+    background: #12394d;
+}

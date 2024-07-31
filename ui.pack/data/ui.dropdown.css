@@ -1,0 +1,37 @@
+
+/*
+DROPDOWN SETTING
+*/
+
+
+/*dropdown*/
+.§dropdown-click, .§dropdown-hover{
+    display: inline-block;
+    position: relative;
+}
+*[class^="§dropbox"]{
+    display: inline-block;
+    position: absolute;
+    background: #fff;
+}
+*[class^="§dropdown"] >*, *[class^="§dropbox"] >*{
+    display: block;
+    margin: 0;
+}
+
+
+*[class^="§dropbox"] >ul,*[class^="§dropbox"]>ol{
+    margin: 0;padding:0;
+    list-style: none;
+}
+*[class^="§dropbox"]>ul li,*[class^="§dropbox"]>ol li{
+    padding: 9px;
+    border-top: 1px solid #ccc;
+}
+
+.§drop-block{
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}

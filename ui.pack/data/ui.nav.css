@@ -1,0 +1,157 @@
+
+/*
+CSS NAVIGATION SETTING
+*/
+
+/* §nav-top */
+.§nav-top>ul{
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.§nav-top>ul:before{
+    content:" ";
+    clear: both;
+    display: block;
+    height: 0;
+    width: 0;
+}
+.§nav-top>ul:after{
+    content:" ";
+    clear: both;
+    display: block;
+    height: 0;
+    width: 0;
+}
+.§nav-top>ul>li{
+    float: left;
+    display: inline-block;
+}
+.§nav-top>ul>li>a,
+.§nav-top>ul>li> *[class^="§dropdown"]>a
+{
+    display: block;
+    margin: 0;
+
+    padding: 15px ;
+    background: #17435A;
+    color: white;
+}
+.§nav-top>ul>li>a:hover,
+.§nav-top>ul>li> *[class^="§dropdown"]>a:hover{
+    background: #77B1CE;
+}
+
+.§nav-top>ul>li {
+    float: left;
+    display: inline-block;
+}
+.§nav-top>ul>li>.trig{
+    display: none;
+}
+@media only screen and (max-width:992px) {
+    .§nav-top>ul>li>.trig{
+        display: block;
+    }
+}
+
+.§nav-top>ul>li {
+    float: left;
+    display: block;
+}
+
+
+.navbox-line{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    z-index: 100;
+    margin: 0;
+}
+.navbox-block{
+    position: absolute;
+    display: block;
+    z-index: 100;
+    margin: 0;
+}
+
+
+/*TO TOP SETTING*/
+.§totop-left{
+    position:      fixed;
+    left:          20px;
+    bottom:        20px;
+    z-index:       99;
+}
+.§totop-right{
+    position:      fixed;
+    right:          20px;
+    bottom:        20px;
+    z-index:       99;
+}
+
+ /*Sides design*/
+ *[class^="§nav-list"],
+ *[class^="§nav-list"]>li>ul
+ {
+      padding: 0;
+      margin: 0;
+ }
+ *[class^="§nav-list"]>li
+ {
+      list-style: none !important;
+      list-style-image: none !important;
+      list-style-type:  none !important;
+      margin: 0;
+ }
+ 
+ @media only screen and (max-width:992px) {
+     .§navleft-trigger{
+         position: fixed;
+         top: 0; left: 0;
+         overflow: hidden;
+         z-index: 999;
+     }
+     .compact-navSideLeft{
+         position: fixed;
+         top: 0; left: 0; bottom: 0;
+         overflow-x: hidden;
+         overflow-y: scroll;
+         box-shadow: 0 0 20px black;
+         z-index: 999;
+     }
+     .§navright-trigger{
+         position: fixed;
+         top: 0; right: 0;
+         overflow: hidden;
+         z-index: 999;
+     }
+     .compact-navSideRight{
+         position: fixed;
+         z-index: 999;
+         top: 0; right: 0; bottom: 0;
+         overflow-x: hidden;
+         overflow-y: scroll;
+         box-shadow: 0 0 20px black;
+     }
+ }
+ @media only screen and (min-width:993px) {
+     .§navleft-trigger,.§navright-trigger{
+         display:none;
+     }
+     .compact-navSideLeft{
+         left: 0;
+         position: relative;
+         margin: 0 auto;
+     }
+     .compact-navSideRight{
+         left: 0;
+         position: relative;
+         margin: 0 auto;
+     }
+ }
+ 
+ 
+ 

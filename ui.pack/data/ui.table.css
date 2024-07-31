@@ -1,0 +1,66 @@
+
+/*
+CSS TABLE ELEMENTS SETTING
+*/
+
+
+/*/TABLE DESIGN/*/
+table{
+    padding:0;
+    margin: 0;
+    width: 100%;
+    display: table;
+    z-index: 1;
+    position: relative;
+}
+
+th{ padding: 12px; vertical-align: middle; }
+td{ padding: 12px; vertical-align: middle; }
+th:first-child ,
+td:first-child {
+     padding-left: 0px;
+}
+th:last-child,
+td:last-child{
+     padding-right: 0px ;
+}
+ 
+/*table simple design*/
+.§table-simpleHorintal tr:first-child,
+.§table-simpleHorintal tr:last-child {
+     border-bottom: 3px solid;
+}
+.§table-simpleHorintal td{
+     border-bottom: 1px solid;
+     vertical-align: middle; 
+}
+
+/* --- */
+.§table-simpleVertical tr{
+    width: 100%;
+}
+.§table-simpleVertical th{
+    border-right: 1px solid;
+    width: auto;
+}
+.§table-simpleVertical td{
+     border-right: 1px solid;
+     width: auto;
+}
+.§table-simpleVertical th:last-child,
+.§table-simpleVertical td:last-child
+{ border-right: 0px !important; }
+
+*[class^="§table"] td> h1,
+*[class^="§table"] td> h2,
+*[class^="§table"] td> h3,
+*[class^="§table"] td> h4,
+*[class^="§table"] td> h5,
+*[class^="§table"] td> h6,
+*[class^="§table"] td> h7,
+*[class^="§table"] td> p,
+*[class^="§table"] td> i,
+*[class^="§table"] td> b,
+*[class^="§table"] td> strong,
+*[class^="§table"] td> a
+{ margin: 0;  }
