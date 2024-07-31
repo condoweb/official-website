@@ -1,0 +1,41 @@
+
+/*
+    TYPOGRAPHY
+    Puoi modificare ogni aspetto della tipografia... basta sapere il tag o usare un qualsiasi debuggher.
+*/
+
+body{
+    color: #3C8276;
+    font-family: "nexa_lightregular";
+    letter-spacing: 1px;
+}
+hr{
+    border-bottom: 1px solid #81B5B0;
+    height: 0; line-height: 0; padding: 0;
+    margin: 35px 0 35px 0;
+}
+.§br-small{
+    margin: 12px 0 12px 0 !important;
+}
+h1,h2{
+    color: #00A79D;    
+    letter-spacing: -1px;
+}
+h3,h4{
+    color: #00A79D;    
+    letter-spacing: 0px;
+}
+h4{ padding: 0px 0 10px 0; }
+h5,h6,h7{
+    color: #00A79D;    
+    letter-spacing: 0px;
+}
+i{
+    color:#00A79D;
+}
+*[class^="§panel"]>*{
+    color: #3C8276;
+}
+*[class^="§button"]>*{
+    color: #FFF;
+}

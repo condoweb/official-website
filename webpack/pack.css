@@ -1,0 +1,38 @@
+/*ui.pack loader style*/
+@import url( data/reset.css );
+
+@import url( data/loader.css );
+@import url( data/effects.loader.css );
+@import url( data/spinner.css );
+
+@import url( data/toTop.css );
+
+@import url( data/typography.css );
+@import url( data/layout.css );
+@import url( data/layout.toBackground.css );
+@import url( data/layout.thumbox.css );
+@import url( data/table.css );
+@import url( data/nav.css );
+@import url( data/nav.side.css );
+@import url( data/nav.flaps.css );
+@import url( data/nav.tabs.css );
+@import url( data/nav.breadcrumps.css );
+@import url( data/nav.paginate.css );
+@import url( data/panel.css );
+@import url( data/status.css );
+@import url( data/form.button.css );
+@import url( data/form.selectbox.css );
+@import url( data/form.checkradio.css );
+@import url( data/form.dropdown.css );
+@import url( data/overlay.css );
+@import url( data/tooltips.css );
+
+@import url( data/shadow.css );
+@import url( data/typography.textfx.css );
+
+@import url( icon/css/iconFont.css );
+@import url( icon/css/iconFont-animation.css );
+@import url( icon/css/iconFont-codes.css );
+@import url( icon/css/iconFont-embedded.css );
+@import url( icon/css/iconFont-ie7.css );
+@import url( icon/css/iconFont-ie7-codes.css );

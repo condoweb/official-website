@@ -1,0 +1,88 @@
+
+/*
+CSS TABLE ELEMENTS SETTING
+*/
+
+
+/*/TABLE DESIGN/*/
+table{
+    padding:0;
+    margin: 0;
+    width: 100%;
+    display: table;
+    z-index: 1;
+    position: relative;
+}
+thead, tbody, tfoot{}
+th{ padding: 12px; vertical-align: middle; }
+td{ padding: 12px; vertical-align: middle; }
+th:first-child ,
+td:first-child {
+     padding-left: 0px;
+}
+th:last-child,
+td:last-child{
+     padding-right: 0px ;
+}
+ 
+/*table simple design*/
+.§table-simpleHorintal>thead,
+.§table-simpleHorintal>tbody {
+     border-bottom: 3px solid !important;
+}
+.§table-simpleHorintal tr{
+     border-bottom: 1px solid !important;
+     vertical-align: middle;
+}
+
+/* --- */
+.§table-simpleVertical tr{
+    width: 100%;
+}
+.§table-simpleVertical th{
+    border-right: 1px solid;
+    width: auto;
+}
+.§table-simpleVertical td{
+     border-right: 1px solid;
+     width: auto;
+}
+.§table-simpleVertical th:last-child,
+.§table-simpleVertical td:last-child
+{ border-right: 0px !important; }
+
+*[class^="§table"] td> h1,
+*[class^="§table"] td> h2,
+*[class^="§table"] td> h3,
+*[class^="§table"] td> h4,
+*[class^="§table"] td> h5,
+*[class^="§table"] td> h6,
+*[class^="§table"] td> h7,
+*[class^="§table"] td> p,
+*[class^="§table"] td> i,
+*[class^="§table"] td> b,
+*[class^="§table"] td> strong,
+*[class^="§table"] td> a
+{ margin: 0;  }
+
+
+.scroll-x > *[class^="§table"]{
+    display: inline-block !important;
+    width: auto !important;
+}
+.scroll-x > *[class^="§table"]>tr,
+.scroll-x > *[class^="§table"]>td{
+    display: block !important;
+    height: 30px !important;
+    white-space: nowrap !important;
+}
+
+
+.scroll-y > *[class^="§table"]{
+    display: inline-block !important;
+    width: auto !important;
+}
+.scroll-y > *[class^="§table"]>tr,
+.scroll-y > *[class^="§table"]>td{
+    display: block !important;
+}

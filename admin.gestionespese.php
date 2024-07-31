@@ -1,15 +1,19 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-    <?php include "inside.metataghead.php" ?>
+    <head>
+        <?php include "@.metataghead.php" ?>
+        <title>CONDOWEB/ADMIN/GESTISCI SPESE...</title>
+    </head>
 
     <body>
 
-        <!--SITE CONTENT/-->
-
-        <?php include "inside.topBarBig.php" ?>
+        <h1 class="hidden">Condoweb > amministrazione condominio... gestisci le spese di questo condominio.</h1>
+        <?php include "@.page.topbar.big.php" ?>
 
         <div class="§fill-full" style="background:white;" >
             <div class="§fill-limits pad-40 §text-left">
+                <div class="desktop-off mobile-on compact-on" style="margin-top: 80px;"></div>
                 
                 <h3>AREA AMMINISTRAZIONE</h3>
                 <h2>GESTIONE SPESE - NOMECONDOMINIO</h2>
@@ -28,25 +32,27 @@
                                 Potrai modificare ogni spesa tramite i pulsanti che appariranno in riepilogo.
                             </p>
                             <hr style="margin: 25px 0 25px 0;" />
-                            <a class="§button §fill-line">
+                            <a class="§button §fill-line §overlay" rel="scale" href="admin.gestionespese.overlay.aggiungispesa.php">
                                 Aggiungi nuova spesa
                             </a>
                         </div>                        
                     </div>
                     <div class="columnContent desktop-66 mombile-66 compact-100">
                     
-                        <h4>Riepilogo spese caricate per questo condominio <font class="§float-right">[<i class="ico-resize-full-2"> Expand</i> ]</font></h4>
+                        <h4>Riepilogo spese caricate per questo condominio <!--<font class="§float-right">[<i class="ico-resize-full-2"> Expand</i> ]</font>--></h4>
 
                         <hr style="margin: 5px 0 25px 0;" />
 
-                        <table class="§table-simpleHorintal">
-                            <tbody>
+                        <table class="§paginate maxpage-8 maxnumber-5 §table-simpleHorintal">
+                            <thead>
                                 <tr>
                                     <th class="§text-left"> ID </th>
                                     <th class="§text-left"> Tipologia </th>
                                     <th class="§text-left"> Causale </th>
                                     <th class="§text-left"> Opzioni </th>
                                 </tr>
+                            </thead>
+                            <tbody class="pages">
                                 <tr>
                                     <td> <p class="§ellipsis" style="max-width: 50px;">1203</p> </td>
                                     <td> <p class="§ellipsis" style="max-width: 200px;">Condoweb</p> </td>
@@ -54,7 +60,7 @@
                                     <td width="100">
                                         <div class="§button-group §radius-small">
                                             <a class="§button">Allegati</a>
-                                            <a class="§button">Elimina</a>
+                                            <a class="§button §overlay" rel="scale" href="admin.gestionespese.overlay.eliminaspesa.php">Elimina</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -65,7 +71,7 @@
                                     <td width="100">
                                         <div class="§button-group §radius-small">
                                             <a class="§button disabled">Allegati</a>
-                                            <a class="§button">Elimina</a>
+                                            <a class="§button §overlay" rel="scale" href="admin.gestionespese.overlay.eliminaspesa.php">Elimina</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -76,7 +82,7 @@
                                     <td width="100">
                                         <div class="§button-group §radius-small">
                                             <a class="§button">Allegati</a>
-                                            <a class="§button">Elimina</a>
+                                            <a class="§button §overlay" rel="scale" href="admin.gestionespese.overlay.eliminaspesa.php">Elimina</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -87,7 +93,7 @@
                                     <td width="100">
                                         <div class="§button-group §radius-small">
                                             <a class="§button">Allegati</a>
-                                            <a class="§button">Elimina</a>
+                                            <a class="§button §overlay" rel="scale" href="admin.gestionespese.overlay.eliminaspesa.php">Elimina</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -98,7 +104,7 @@
                                     <td width="100">
                                         <div class="§button-group §radius-small">
                                             <a class="§button disabled">Allegati</a>
-                                            <a class="§button">Elimina</a>
+                                            <a class="§button §overlay" rel="scale" href="admin.gestionespese.overlay.eliminaspesa.php">Elimina</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -109,7 +115,7 @@
                                     <td width="100">
                                         <div class="§button-group §radius-small">
                                             <a class="§button disabled">Allegati</a>
-                                            <a class="§button">Elimina</a>
+                                            <a class="§button §overlay" rel="scale" href="admin.gestionespese.overlay.eliminaspesa.php">Elimina</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -120,7 +126,7 @@
                                     <td width="100">
                                         <div class="§button-group §radius-small">
                                             <a class="§button">Allegati</a>
-                                            <a class="§button">Elimina</a>
+                                            <a class="§button §overlay" rel="scale" href="admin.gestionespese.overlay.eliminaspesa.php">Elimina</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -131,7 +137,7 @@
                                     <td width="100">
                                         <div class="§button-group §radius-small">
                                             <a class="§button disabled">Allegati</a>
-                                            <a class="§button">Elimina</a>
+                                            <a class="§button §overlay" rel="scale" href="admin.gestionespese.overlay.eliminaspesa.php">Elimina</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -142,7 +148,7 @@
                                     <td width="100">
                                         <div class="§button-group §radius-small">
                                             <a class="§button">Allegati</a>
-                                            <a class="§button">Elimina</a>
+                                            <a class="§button §overlay" rel="scale" href="admin.gestionespese.overlay.eliminaspesa.php">Elimina</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -153,7 +159,7 @@
                                     <td width="100">
                                         <div class="§button-group §radius-small">
                                             <a class="§button">Allegati</a>
-                                            <a class="§button">Elimina</a>
+                                            <a class="§button §overlay" rel="scale" href="admin.gestionespese.overlay.eliminaspesa.php">Elimina</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -164,7 +170,7 @@
                                     <td width="100">
                                         <div class="§button-group §radius-small">
                                             <a class="§button">Allegati</a>
-                                            <a class="§button">Elimina</a>
+                                            <a class="§button §overlay" rel="scale" href="admin.gestionespese.overlay.eliminaspesa.php">Elimina</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -175,7 +181,7 @@
                                     <td width="100">
                                         <div class="§button-group §radius-small">
                                             <a class="§button disabled">Allegati</a>
-                                            <a class="§button">Elimina</a>
+                                            <a class="§button §overlay" rel="scale" href="admin.gestionespese.overlay.eliminaspesa.php">Elimina</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -186,7 +192,7 @@
                                     <td width="100">
                                         <div class="§button-group §radius-small">
                                             <a class="§button">Allegati</a>
-                                            <a class="§button">Elimina</a>
+                                            <a class="§button §overlay" rel="scale" href="admin.gestionespese.overlay.eliminaspesa.php">Elimina</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -197,7 +203,7 @@
                                     <td width="100">
                                         <div class="§button-group §radius-small">
                                             <a class="§button disabled">Allegati</a>
-                                            <a class="§button">Elimina</a>
+                                            <a class="§button §overlay" rel="scale" href="admin.gestionespese.overlay.eliminaspesa.php">Elimina</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -208,7 +214,7 @@
                                     <td width="100">
                                         <div class="§button-group §radius-small">
                                             <a class="§button disabled">Allegati</a>
-                                            <a class="§button">Elimina</a>
+                                            <a class="§button §overlay" rel="scale" href="admin.gestionespese.overlay.eliminaspesa.php">Elimina</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -219,51 +225,33 @@
                                     <td width="100">
                                         <div class="§button-group §radius-small">
                                             <a class="§button disabled">Allegati</a>
-                                            <a class="§button">Elimina</a>
+                                            <a class="§button §overlay" rel="scale" href="admin.gestionespese.overlay.eliminaspesa.php">Elimina</a>
                                         </div>
                                     </td>
                                 </tr>
+                            </tbody>
+                            <tfoot>
                                 <tr>
-                                    <td colspan="2">
-                                        <div class="§paginate">
-                                            <div class="pagelist">
-                                              <div class="controlleft">
-                                                <a>First</a>
-                                                <a><</a>
-                                              </div>
-                                              <ul>
-                                                <li><a>1</a></li>
-                                                <li><a>2</a></li>
-                                                <li><a>3</a></li>
-                                                loop...
-                                              </ul>
-                                              <div class="controlright">
-                                                <a>></a>
-                                                <a>Last</a>
-                                              </div>
-                                            </div>
-                                      </div> 
+                                    <td colspan="4">
+                                        <div class='page_navigation'></div>
+                                        <input type='hidden' class='current_page' />
+                                        <input type='hidden' class='show_per_page' />
                                     </td>
                                 </tr>
-                            </tbody>
+                            </tfoot>
                         </table>                    
-                        </div>
-                        <div class="clearAll"></div>
                     </div>
-
-                <hr/>
-                
-                <hr />
+                    <div class="clearAll"></div>
+                </div>
 
                 
             </div>
         </div>
+        <?php include "@.page.footer.php" ?>
+        <a class="§totop-left"><i class="ico-up-circle-1"></i></a>
 
-        <!--/SITE CONTENT-->
+        <?php include "@.scriptsandcss.php" ?>
 
-        <?php include "inside.scriptsandcss.php" ?>
-
-            
     </body>
 
 </html>

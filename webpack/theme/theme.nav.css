@@ -1,0 +1,70 @@
+
+/*
+    NAV
+    Modifica l'aspetto del menu principale standard, il classico sistema di navigazione ma fornito in queste webpack.
+    Da questo file puoi toccare sia il menu che i suoi sotto elementi...
+*/
+
+/*generico*/
+.§nav{
+    background: #4a5d64;
+}
+
+/*link e attivatori*/
+.§nav>ul>li> a,
+.§nav>ul>li> *[class^="§dropdown"]>a{
+    background: #4a5d64;
+    color: #ffffff !important;
+}
+.§nav .active,
+.§nav>ul>li> a:hover,
+.§nav>ul>li> *[class^="§dropdown"]>a:hover{
+    background: #031a23;
+}
+.§nav>ul>li> a:active,
+.§nav>ul>li> *[class^="§dropdown"]>a:active{
+    background: #4a5d64;
+}
+
+/*pannelli*/
+.§nav .§panel,
+.§nav .navbox-line,
+.§nav .navbox-block{
+    background: blue !important
+    border-color: #4a5d64 !important;
+    box-shadow: inset 0px 0px 10px #ccc;
+}
+
+/*freccia...*/
+.§nav .§panel:after,
+.§nav .navbox-line:after,
+.§nav .navbox-block:after,
+.§nav .§panel:before,
+.§nav .navbox-line:before,
+.§nav .navbox-block:before{
+    bottom: 99%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.§nav .§panel:after,
+.§nav .navbox-line:after,
+.§nav .navbox-block:after{
+    border-color: transparent;
+    border-bottom-color: #fff;
+    border-width: 5px;
+    margin-left: -5px;
+}
+.§nav .§panel:before,
+.§nav .navbox-line:before,
+.§nav .navbox-block:before{
+    border-color: transparent;
+    border-bottom-color: #fff;
+    border-width: 11px;
+    margin-left: -11px;
+}

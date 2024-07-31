@@ -1,0 +1,61 @@
+
+/*
+    BREADCRUMBS
+    Modifica l'aspetto delle breadcrubs.
+    In questa versione vi è già un tema chiamato "classic" ma puoi crearne di nuovi direttamente te...
+    es; .§breadcrumbs-MIOSTYLE
+*/
+
+/*style*/
+.§breadcrumbs-classic{
+    border: 1px solid #dce7f0;
+}
+.§breadcrumbs-classic a, .§breadcrumbs-classic a:after {
+    
+    background: white;
+    transition: all 0.5s;
+    box-shadow: #dce7f0 3px -3px 2px;
+}
+.§breadcrumbs-classic a:before {
+    border-right: 1px dotted #ccc; 
+}
+.§breadcrumbs-classic a:hover, .§breadcrumbs-classic a.active, 
+.§breadcrumbs-classic a:hover:after, .§breadcrumbs-classic a.active:after{
+    color: white;
+    background: #4a5d64;
+}
+
+/*general settings*/
+*[class^="§breadcrumbs-"] a {
+    font-size: 12px;
+    line-height: 36px;
+    padding: 0px 30px 0px 60px !important; /*margini delle scritte interne*/
+}
+*[class^="§breadcrumbs-"] a:first-child {
+    padding-left: 44px !important;  /*margine del primo figlio*/
+}
+*[class^="§breadcrumbs-"] a:first-child:before {
+    left: -4px !important;  /*margine del primo numero (rispetto al primo figlio)*/
+}
+*[class^="§breadcrumbs-"] a:last-child {
+    padding-right: 20px !important;
+}
+
+/*bread arrow*/
+*[class^="§breadcrumbs-"] a:after {
+    right: -18px; 
+    width: 36px; 
+    height: 36px;
+    border-radius: 0 5px 0 20px;
+}
+*[class^="§breadcrumbs-"] a:last-child:after { content: none; }
+*[class^="§breadcrumbs-"] a:before {
+    /*border-radius: 100%; attiva se vuoi che i numeri diventino parentesi*/
+    width: 10px;
+    height: 5px;
+    padding: 0px 3px 15px 24px; /*margini delle scritte interne*/
+    line-height: 20px;
+    margin: 8px 0;
+    left: 14px;
+    font-weight: bold;
+}

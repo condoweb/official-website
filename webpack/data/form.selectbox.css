@@ -1,0 +1,38 @@
+
+/*
+CSS SELECTBOX SETTING
+*/
+
+.§selectbox,.§selectbox *{
+    cursor: pointer;
+}
+.§selectbox{
+    width: 100%;
+    display: block;
+    clear: both;
+    overflow: hidden;
+    z-index: 998;
+}
+.select{
+    width: 100%;
+    max-width: 100%;
+    border: 0px;
+}
+.selector{
+    position: absolute !important;
+    list-style: none !important;
+    display: block;
+    margin: 0;
+    padding: 0;
+    z-index: 999;
+}
+.selector>li{
+    height: 0;
+    overflow: hidden;
+    display: block;
+    min-width: 100%;
+    width: 100%;
+}
+.focused>li{
+    height: auto !important;
+}

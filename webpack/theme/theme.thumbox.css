@@ -1,0 +1,120 @@
+
+/*
+    TOOLTIPS
+    In verità non serve avere un preset definito di thumbox, inquanto quest'ultima serve solo per sovraimprimere il box descrizione sopra l'immagine di riferimento.
+    Tecnicamente, però, basta applicargli una classe aggiuntiva per rendere tutto più piacevole e dinamico! ecco 3 esempi:
+*/
+
+.thumbDemo1{
+    padding:6px;
+    background: #fff;
+    border-color: #ccc;
+
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+.thumbDemo1:hover{
+    background: #4a5d64;
+    border-color: #4a5d64;
+}
+
+.thumbDemo1>.tmbContent{
+    text-align: center;
+    background: transparent;
+    border-color: #4a5d64;
+    opacity: 0;
+}
+.thumbDemo1:hover>.tmbContent{
+    background: #FFF;
+    border-color: #FFF;
+    box-shadow: inset 0px 0px 10px #000;
+    opacity: 0.8;
+}
+.thumbDemo1 h3{
+    margin-top: 5%;
+}
+.thumbDemo1 h3,.thumbDemo1 p,.thumbDemo1 a{
+    opacity: 1.6;
+}
+
+
+
+.thumbDemo2{
+    padding:6px;
+    background: #fff;
+    border-color: #ccc;
+
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+.thumbDemo2>.tmbContent{
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+
+    text-align: center;
+    background: transparent;
+    border-color: #4a5d64;
+    opacity: 0;
+    margin-left: -300px;
+}
+.thumbDemo2:hover>.tmbContent{
+    background: #000;
+    border-color: #FFF;
+    box-shadow: inset 0px 0px 10px #000;
+    opacity: 0.8;
+    margin-left: 0px;
+}
+.thumbDemo2 h3{
+    margin-top: 5%;
+}
+.thumbDemo2 h3,.thumbDemo2 a{
+    opacity: 1.6;
+}
+
+
+
+.thumbDemo3{
+    padding:6px;
+    background: #fff;
+    border-color: #ccc;
+
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+.thumbDemo3>.tmbContent{
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+
+    text-align: center;
+    background: transparent;
+    border: 0px solid #4a5d64;
+    opacity: 0;
+}
+.thumbDemo3:hover>.tmbContent{
+    border: 10px solid #4a5d64;
+    background: #FFF;
+    opacity: 0.8;
+}
+.thumbDemo3 h3{
+    margin-top: 5%;
+    opacity: 1.6;
+}
+.thumbDemo3 a{
+    margin-top: 20px;
+    opacity: 1.6;
+}

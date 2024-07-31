@@ -1,0 +1,93 @@
+
+/*
+    LOADER
+    Modifica l'aspetto del loader ed i colori dello spinner.
+    Puoi cambiare lo spinner totalmente, lo spinner è nel
+    seguente percorso: webpack/data/spinner/classic.html
+*/
+
+/*schermata di loading...*/
+body{
+    display: none;/*rende il display invisibile alla partenza*/
+}
+.loader{
+    /*applica quello che vuoi a questo div*/
+    background: #fff;
+}
+
+/*spinner condoweb*/
+.spinner-condoweb {
+  width: 0px;
+  height: 0px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.spinner-condoweb > div {
+  width: 10px;
+  height: 20px;
+  position: absolute;
+  left: -10px;
+  bottom: 15px;
+  border-radius: 8px;
+  transform-origin: 20px 35px;
+  transform: rotate(0deg);
+  animation: condoweb 0.8s infinite;
+}
+.spinner-condoweb > div:nth-child(2) {
+  transform: rotate(45deg);
+  animation-delay: 0.1s;
+}
+.spinner-condoweb > div:nth-child(3) {
+  transform: rotate(90deg);
+  animation-delay: 0.2s;
+}
+.spinner-condoweb > div:nth-child(4) {
+  transform: rotate(135deg);
+  animation-delay: 0.3s;
+}
+.spinner-condoweb > div:nth-child(5) {
+  transform: rotate(180deg);
+  animation-delay: 0.4s;
+}
+.spinner-condoweb > div:nth-child(6) {
+  transform: rotate(225deg);
+  animation-delay: 0.5s;
+}
+.spinner-condoweb > div:nth-child(7) {
+  transform: rotate(270deg);
+  animation-delay: 0.6s;
+}
+.spinner-condoweb > div:nth-child(8) {
+  transform: rotate(315deg);
+  animation-delay: 0.7s;
+}
+
+@keyframes condoweb {
+  0% {
+    background: transparent;
+    left: -10px;
+    transform-origin: 10px 35px;
+  }
+  30% {
+    background: #00A79D;
+    box-shadow: 0px 0px 20px #00A79D;
+  }
+  100% {
+    background: transparent;
+    left: 10px;
+    transform-origin: -10px 35px;
+  }
+}
+
+/*spinner
+.spinner-classic {
+    background-color: #333;
+}
+    .spinner-classic:before {
+        border-bottom: 25px solid #333;
+    }
+    .spinner-classic:after {
+        border-top: 25px solid #333;
+    }
+*/

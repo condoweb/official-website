@@ -1,0 +1,24 @@
+
+/*
+    LINK
+    Modifica l'aspetto dei link della pagina.
+*/
+
+a{
+    color: #356862;
+    background: transparent;
+    padding: 2px 6px 0 6px;
+    margin: -2px -4px 0 -4px;
+
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+}
+a:hover{
+    color: #FFF;
+    background: #00a79c;
+}
+
+h2>a{ font-size: 37px;}

@@ -1,0 +1,245 @@
+
+/*
+    CHECKBOX E RADIOBOX
+    Modifica l'aspetto delle checkbox e delle radiobox.
+*/
+
+/*slide-mini*/
+.§checkbox-slide-mini,
+.§radiobox-slide-mini{
+    -webkit-border-radius:  2px;
+    -moz-border-radius:     2px;
+    border-radius:          2px;
+}
+.§checkbox-slide-mini label,
+.§radiobox-slide-mini label{
+    -webkit-border-radius:  2px;
+    -moz-border-radius:     2px;
+    border-radius:          2px;
+    background:             #FFF;
+    border:                 1px solid #ccc; /*bordo del puntino*/
+}
+.§checkbox-slide-mini input[type="checkbox"]:checked + label,
+.§radiobox-slide-mini input[type="radio"]:checked + label {
+    border:                 2px solid #545f60; /*bordo del puntino*/
+    background:             #545f60; /*sfondo del puntino*/
+}
+
+/*slide-medium*/
+.§checkbox-slide-medium,
+.§radiobox-slide-medium{
+    -webkit-border-radius:  2px;
+    -moz-border-radius:     2px;
+    border-radius:          2px;
+    background:             #fff;/*bkg a riposo (contenitore)*/
+    box-shadow:             0 1px 6px #ccc inset;
+}
+.§checkbox-slide-medium:after,
+.§radiobox-slide-medium:after {    
+    -webkit-border-radius:  2px;
+    -moz-border-radius:     2px;
+    border-radius:          2px;
+    background:             #ccc;/*bkg della linea su cui scorre il puntino*/
+}
+.§checkbox-slide-medium label,
+.§radiobox-slide-medium label{
+    background: #fff;
+    -webkit-border-radius:  2px;
+    -moz-border-radius:     2px;
+    border-radius:          2px;
+    -webkit-box-shadow:     0px 2px 3px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow:        0px 2px 3px 0px rgba(0,0,0,0.3);
+    box-shadow:             0px 2px 3px 0px rgba(0,0,0,0.3);
+}
+.§checkbox-slide-medium label:after,
+.§radiobox-slide-medium label:after {
+    background:             #fff;/*bkg del puntino a riposo*/
+    -webkit-border-radius:  2px;
+    -moz-border-radius:     2px;
+    border-radius:          2px;
+    -webkit-box-shadow:     inset 0px 1px 1px rgba(0,0,0,0.3), 0px 1px 0px rgba(255,255,255,0.4);
+    -moz-box-shadow:        inset 0px 1px 1px rgba(0,0,0,0.3), 0px 1px 0px rgba(255,255,255,0.4);
+    box-shadow:             inset 0px 1px 1px rgba(0,0,0,0.3), 0px 1px 0px rgba(255,255,255,0.4);
+}
+
+.§checkbox-slide-medium input[type="checkbox"]:checked + label:after,
+.§radiobox-slide-medium input[type="radio"]:checked + label:after{
+    background: #545f60; /*bkg del puntino attivo*/
+}
+
+/*slide-big*/
+.§checkbox-slide-big,
+.§radiobox-slide-big{
+    -webkit-border-radius:  2px;
+    -moz-border-radius:     2px;
+    border-radius:          2px;
+    background:             #fff; /*bkg a riposo (contenitore)*/
+    box-shadow:             0 1px 3px #ccc inset;
+    color:                  #545f60 ;/*colore scritta "ON"*/
+}
+.§checkbox-slide-big:after,
+.§radiobox-slide-big:after{
+    color:                  #d1d1d1 ;/*colore scritta "OFF"*/
+}
+
+.§checkbox-slide-big label,
+.§radiobox-slide-big label{
+    border:                 0px solid #fff;
+   -webkit-border-radius:   2px;
+    -moz-border-radius:     2px;
+    border-radius:          2px;
+    -webkit-box-shadow:     0px 2px 3px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow:        0px 2px 3px 0px rgba(0,0,0,0.3);
+    box-shadow:             0px 2px 3px 0px rgba(0,0,0,0.3);
+    background:             #fff; /*colore pulsante "OFF"*/
+}
+.§checkbox-slide-big input[type="checkbox"]:checked + label,
+.§checkbox-slide-big input[type="radio"]:checked + label{
+    background:             #FFF; /*colore del pulsante attivo*/
+}
+.§button-group > .§checkbox-slide-big label,
+.§button-group > .§radiobox-slide-big label{
+    -webkit-border-radius:  2px;
+    -moz-border-radius:     2px;
+    border-radius:          2px;
+}
+
+/*round light*/
+.§checkbox-round-light,
+.§radiobox-round-light {
+    background:             #fff; /*bkg di fondo esterno*/
+    -webkit-box-shadow:     inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow:        inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    box-shadow:             inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+}
+.§checkbox-round-light label,
+.§radiobox-round-light label {
+    background:             #fff; /*bkg di fondo interno*/
+    box-shadow:             0 1px 6px #ccc inset;
+}
+.§checkbox-round-light label:after,
+.§radiobox-round-light label:after{
+    -webkit-box-shadow:     inset 0px 1px 1px rgba(0,0,0,0.3), 0px 1px 0px rgba(255,255,255,0.4);
+    -moz-box-shadow:        inset 0px 1px 1px rgba(0,0,0,0.3), 0px 1px 0px rgba(255,255,255,0.4);
+    box-shadow:             inset 0px 1px 1px rgba(0,0,0,0.3), 0px 1px 0px rgba(255,255,255,0.4);
+    background:             #545f60 ; /*colore punto*/
+}
+.§button-group > .§checkbox-round-light,
+.§button-group > .§radiobox-round-light{
+    background: none;
+}
+.§button-group > .§checkbox-round-light label,
+.§button-group > .§radiobox-round-light label{
+    border-right:           0px !important;
+    -webkit-box-shadow:     inset 0px 1px 1px rgba(0,0,0,0.3), 0px 1px 0px rgba(255,255,255,0.4);
+    -moz-box-shadow:        inset 0px 1px 1px rgba(0,0,0,0.3), 0px 1px 0px rgba(255,255,255,0.4);
+    box-shadow:             inset 0px 1px 1px rgba(0,0,0,0.3), 0px 1px 0px rgba(255,255,255,0.4);
+    background:             #fff;
+}
+
+
+/*round check*/
+.§checkbox-round-check,
+.§radiobox-round-check {
+    background:             #FFF; /*bkg sfondo esterno*/
+    -webkit-box-shadow:     inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow:        inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    box-shadow:             inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+}
+.§checkbox-round-check label,
+.§radiobox-round-check label {
+    background:             #FFF; /*bkg sfondo interno*/
+    box-shadow:             0 1px 6px #ccc inset;
+}
+.§checkbox-round-check label:after,
+.§radiobox-round-check label:after{
+    border-color:           #545f60; /*spunta*/
+}
+.§button-group > .§checkbox-round-check,
+.§button-group > .§radiobox-round-check{
+    background:             none;
+}
+.§button-group > .§checkbox-round-check label,
+.§button-group > .§radiobox-round-check label{
+    border-right:           0px !important;
+    -webkit-box-shadow:     inset 0px 1px 1px rgba(0,0,0,0.3), 0px 1px 0px rgba(255,255,255,0.4);
+    -moz-box-shadow:        inset 0px 1px 1px rgba(0,0,0,0.3), 0px 1px 0px rgba(255,255,255,0.4);
+    box-shadow:             inset 0px 1px 1px rgba(0,0,0,0.3), 0px 1px 0px rgba(255,255,255,0.4);
+    background:             #fff;
+}
+
+/*square light*/
+.§checkbox-square-light,
+.§radiobox-square-light{
+    background: #fff;/*bkg di fondo esterno*/
+    -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+}
+.§checkbox-square-light label,
+.§radiobox-square-light label {
+    background: #fff;/*bkg di fondo interno*/
+    box-shadow: 0 1px 6px #ccc inset;
+}
+.§checkbox-square-light label:after,
+.§radiobox-square-light label:after {
+    background: #545f60; /*colore spunta*/
+}
+.§button-group > .§checkbox-square-light,
+.§button-group > .§radiobox-square-light{
+    border-right: 0px !important;
+}
+
+/*square check*/
+.§checkbox-square-check,
+.§radiobox-square-check{
+    background: #FFF; /*bkg di fondo esterno*/
+    -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+}
+.§checkbox-square-check label,
+.§radiobox-square-check label{
+    background: #FFF ;/*bkg di fondo interno*/
+    box-shadow: 0 1px 6px #ccc inset;
+}
+.§checkbox-square-check label:after,
+.§radiobox-square-check label:after {
+    border-color: #545f60; /*colore spunta*/
+}
+.§button-group > .§checkbox-square-check,
+.§button-group > .§radiobox-square-check{
+    border-right: 0px !important;
+}
+
+/*check mini (in)*/
+.§checkbox-mini-check label,
+.§radiobox-mini-check label{
+    background: #fff; /*bkg*/
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+    -moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+}
+.§checkbox-mini-check label:after,
+.§radiobox-mini-check label:after {
+    border-color:           #545f60; /*spunta*/
+}
+
+/*check mini (out)*/
+.§checkbox-mini-light label,
+.§radiobox-mini-light label {
+    background: #fff; /*bkg*/
+    -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+}
+.§checkbox-mini-light label:after,
+.§radiobox-mini-light label:after {
+    background:             #545f60;/*bkg del puntino a riposo*/
+    -webkit-border-radius:  2px;
+    -moz-border-radius:     2px;
+    border-radius:          2px;
+    -webkit-box-shadow:     inset 0px 1px 1px rgba(0,0,0,1), 0px 1px 0px rgba(255,255,255,0.9);
+    -moz-box-shadow:        inset 0px 1px 1px rgba(0,0,0,1), 0px 1px 0px rgba(255,255,255,0.9);
+    box-shadow:             inset 0px 1px 1px rgba(0,0,0,1), 0px 1px 0px rgba(255,255,255,0.9);
+}

@@ -1,0 +1,31 @@
+
+/*
+CSS TOOTLTIPS SETTING
+*/
+.§tooltips-simple{
+    display: inline;
+    position: relative;
+}
+.§tooltips-simple:hover:after{
+    background: rgba(0,0,0,.8);
+    bottom: 26px;
+    content: attr(rel);
+    left: -21.3333333%;
+    position: absolute;
+    z-index: 98;
+    
+    min-width: 200px;
+    width: auto;
+    max-width: 400px;
+    
+    text-align: left;
+}
+.§tooltips-simple:hover:before{
+    border: solid;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}

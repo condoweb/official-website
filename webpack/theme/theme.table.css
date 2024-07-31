@@ -1,0 +1,13 @@
+
+/*
+    TABLE
+    Modifica l'aspetto delle tabelle. Questi che vedi sono parametri di base e nativi, ma puoi aumentare le opzioni come meglio credi...
+*/
+
+*[class^="§table-"] td, *[class^="§table-"] tr{    
+    border-color: #c7ced0 !important;
+}
+*[class^="§table-"] tr{
+    color: #3e6e96;
+}
+*[class^="§table-"] .§button-group>a{ margin-left: -5.5px !important;}

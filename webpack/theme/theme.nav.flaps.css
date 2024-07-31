@@ -1,0 +1,29 @@
+
+/*
+    NAV.FLAPS
+    Modifica l'aspetto dei pannelli flaps, alternativa agli accordion verticali delle webpack.
+    puoi creare diversi modelli grafici aggiungendo una classe vicino la classe principale:
+    <div class="§flaps mioMonelloGrafico ecc..."></div>
+    o modificare quelli standard direttamente.
+*/
+
+.§flaps{
+    background: #fff;
+    box-shadow: inset 0px 0px 10px #ccc;
+    text-align: justify;
+    overflow: hidden;
+}
+.§flaps .trig{
+    color: #fff;
+    background: #545f60;
+    padding: 10px;
+}
+.§flaps .trig:hover{
+    color: #fff;
+    background: #031a23;
+    padding: 10px;
+}
+.§flaps .flapActive{
+    color: #fff;
+    background: #031a23;
+}

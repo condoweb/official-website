@@ -1,0 +1,216 @@
+
+/*ALL*/
+*[class^="imgBox"]{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+/*safe mode*/
+.bkged-android{
+    display: block;
+}
+.bkged-android>.androidBox {
+    display: block;
+    position: absolute;
+    overflow: hidden !important;
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+    overflow-style: panner;
+}
+.bkged-android>.androidBox >img{
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+
+/*normal mode*/
+.imgBox-undefined,
+.imgBox-cover,
+*[class^="bkged"]{
+    width: 100%;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    -webkit-transition: all 400ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+   -moz-transition: all 400ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+     -o-transition: all 400ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition: all 400ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+*[class^="bkged"]:hover{
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+   -moz-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+     -o-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+/*fx -zoom*/
+.imgBox-zoomIn>.bkged{
+    background-size: 100%, 100%;
+}
+.§thumbox:hover>.imgBox-zoomIn>.bkged,
+.imgBox-zoomIn:hover>.bkged{
+    background-size: 115%, 115%;
+}
+.imgBox-zoomOut>.bkged{
+    background-size: 125%, 125%;
+}
+.§thumbox:hover>.imgBox-zoomOut>.bkged,
+.imgBox-zoomOut:hover>.bkged{
+    background-size: 100%, 100%;
+}
+
+.imgBox-zoomInDegree>.bkged{
+    zoom: 1;
+    -moz-transform: scale(1,1) rotate(0deg);
+    -o-transform: scale(1,1) rotate(0deg);
+    -webkit-transform: scale(1,1) rotate(0deg);
+    transform: scale(1,1) rotate(0deg);
+
+    background-size: 100%, 100%;
+}
+.§thumbox:hover>.imgBox-zoomInDegree>.bkged,
+.imgBox-zoomInDegree:hover>.bkged{
+    zoom: 2;
+    -moz-transform: scale(2,2) rotate(20deg);
+    -o-transform: scale(2,2) rotate(20deg);
+    -webkit-transform: scale(2,2) rotate(20deg);
+    transform: scale(2,2) rotate(20deg);
+}
+.imgBox-zoomOutDegree>.bkged{
+    zoom: 2;
+    -moz-transform: scale(2,2) rotate(20deg);
+    -o-transform: scale(2,2) rotate(20deg);
+    -webkit-transform: scale(2,2) rotate(20deg);
+    transform: scale(2,2) rotate(20deg);
+
+    background-size: 100%, 100%;
+}
+.§thumbox:hover>.imgBox-zoomOutDegree>.bkged,
+.imgBox-zoomOutDegree:hover>.bkged{
+    zoom: 1;
+    -moz-transform: scale(1,1) rotate(0deg);
+    -o-transform: scale(1,1) rotate(0deg);
+    -webkit-transform: scale(1,1) rotate(0deg);
+    transform: scale(1,1) rotate(0deg);
+}
+
+
+/*fx -slide*/
+.imgBox-slideTop>.bkged{
+    background-position: 0 50%;
+}
+.§thumbox:hover>.imgBox-slideTop>.bkged,
+.imgBox-slideTop:hover>.bkged{    
+    background-position: 0 100%;
+}
+.imgBox-slideLeft>.bkged{
+    background-position: 0% 0;
+}
+.§thumbox:hover>.imgBox-slideLeft>.bkged,
+.imgBox-slideLeft:hover>.bkged{    
+    background-position: 30% 0;
+}
+.imgBox-slideRight>.bkged{
+    background-position: 30% 0;
+}
+.§thumbox:hover>.imgBox-slideRight>.bkged,
+.imgBox-slideRight:hover>.bkged{    
+    background-position: 0% 0;
+}
+.imgBox-slideDown>.bkged{
+    background-position: 0 50%;
+}
+.§thumbox:hover>.imgBox-slideDown>.bkged,
+.imgBox-slideDown:hover>.bkged{    
+    background-position: 0 0%;
+}
+
+
+/*fx -opacy*/
+.imgBox-opacyUp>.bkged{
+    opacity: 0.5;
+}
+.§thumbox:hover>.imgBox-opacyUp>.bkged,
+.imgBox-opacyUp:hover>.bkged{
+    opacity: 1;
+}
+.imgBox-opacyDown>.bkged{
+    opacity: 1;
+}
+.§thumbox:hover>.imgBox-opacyDown>.bkged,
+.imgBox-opacyDown:hover>.bkged{
+    opacity: 0.5;
+}
+
+/*fx -superzoom*/
+.imgBox-focuzUp>.bkged{
+    background-size: 100%, 100%;
+    opacity: 1;    
+}
+.§thumbox:hover>.imgBox-focuzUp>.bkged,
+.imgBox-focuzUp:hover>.bkged{
+    background-size: 1999%, 1999%;
+    opacity: 0.7;
+}
+.imgBox-focuzDown>.bkged{
+    background-size: 1999%, 1999%;
+    opacity: 0.7;
+}
+.§thumbox:hover>.imgBox-focuzDown>.bkged,
+.imgBox-focuzDown:hover>.bkged{
+    background-size: 100%, 100%;
+    opacity: 1;
+}
+.imgBox-focuzInDegree>.bkged{
+    zoom: 1;
+    -moz-transform: scale(1,1) rotate(0deg);
+    -o-transform: scale(1,1) rotate(0deg);
+    -webkit-transform: scale(1,1) rotate(0deg);
+    transform: scale(1,1) rotate(0deg);
+    background-size: 100%, 100%;
+    opacity: 0.7;
+    -webkit-transition: all 600ms;
+   -moz-transition: all 600ms;
+     -o-transition: all 600ms;
+        transition: all 600ms;
+}
+.§thumbox:hover>.imgBox-focuzInDegree>.bkged,
+.imgBox-focuzInDegree:hover>.bkged{ 
+    zoom: 2;   
+    -moz-transform: scale(3) rotate(50deg);
+    -o-transform: scale(3) rotate(50deg);
+    -webkit-transform: scale(3) rotate(50deg);
+    transform: scale(3) rotate(50deg);
+    background-size: 1999%, 1999%;
+    opacity: 1;
+}
+.imgBox-focuzDownDegree>.bkged{   
+    zoom: 2; 
+    -moz-transform: scale(3) rotate(50deg);
+    -o-transform: scale(3) rotate(50deg);
+    -webkit-transform: scale(3) rotate(50deg);
+    transform: scale(3) rotate(50deg);
+    background-size: 1999%, 1999%;
+    opacity: 0.7;
+    -webkit-transition: all 600ms;
+   -moz-transition: all 600ms;
+     -o-transition: all 600ms;
+        transition: all 600ms;
+}
+.§thumbox:hover>.imgBox-focuzDownDegree>.bkged,
+.imgBox-focuzDownDegree:hover>.bkged{
+    zoom: 1;
+    -moz-transform: scale(1,1) rotate(0deg);
+    -o-transform: scale(1,1) rotate(0deg);
+    -webkit-transform: scale(1,1) rotate(0deg);
+    transform: scale(1,1) rotate(0deg);
+    background-size: 100%, 100%;
+    opacity: 1;
+}

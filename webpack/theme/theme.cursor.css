@@ -1,0 +1,19 @@
+
+/*
+    CURSOR
+    Assegna l'immagine del cursore al giusto elemento.
+    Puoi cambiare ed aggiungere cursori seguendo questo
+    percorso: webpack/cursor/miocursore.png
+*/
+
+body
+{ cursor: url(../../webpack/cursor/arrow.png), auto !important; }
+a, .§button
+{ cursor: url(../../webpack/cursor/pointer.png), pointer !important; }
+.help,.§tooltip
+{ cursor: url(../../webpack/cursor/help.png), help !important; }
+
+// crea i tuoi cursori come vuoi:
+//http://www.w3schools.com/cssref/pr_class_cursor.asp
+// exemple:
+//.move,.grab{ cursor: url(../../webpack/cursor/move.png), move !important; }

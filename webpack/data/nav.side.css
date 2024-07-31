@@ -1,0 +1,223 @@
+*[class^="menuBlock"] {
+    position: fixed;
+    display: block;
+    min-height: 100%;
+    max-height: 100%;
+    top: 0;
+    z-index: 999999995;
+    overflow: hidden !important;
+}
+.scroll-y{
+    height: auto;
+    min-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 999999996;
+}
+.menuBox{
+    display: block;
+    max-width: 100%;
+    z-index: 999999992;
+    position: relative !important;
+}
+ 
+*[class^="siteBlock"]{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    display: block;
+    position: fixed;
+}
+.siteBox{
+    display: block;
+    z-index: 999999991;
+}
+.siteOver{
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    height: 100%;
+    max-height: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.01);
+    z-index: 999999992;
+}
+
+.closeMenu {
+    display:block !important;
+    overflow: hidden;
+    border: none;
+    z-index: 999999993;
+}
+
+
+@media only screen and (max-width:1000px) {
+    .formobile{ display: inline-block ; visibility: visible ;}
+}
+@media only screen and (min-width:1024px) {
+    .formobile{ height: 0; width: 0; display: none ; visibility: hidden ;}
+}
+
+
+
+/*SLIDE EFFECT*/
+/**slideLeft**/
+.siteBlock-slideLeft,
+.siteBlock-slideLeft-closed,
+.siteBlock-slideLeft-open,
+.menuBlock-slideLeft,
+.menuBlock-slideLeft-closed,
+.menuBlock-slideLeft-open{
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    display: block;
+    position: fixed;
+}
+.siteBlock-slideLeft,.siteBlock-slideLeft-closed {
+    -webkit-transition: transform 0.3s, opacity 1s linear;
+    -moz-transition:    transform 0.3s, opacity 1s linear;
+    -ms-transition:     transform 0.3s, opacity 1s linear;
+    -o-transition:      transform 0.3s, opacity 1s linear;
+    transition:         transform 0.3s, opacity 1s linear;
+    transition-delay:   0s;
+    
+    opacity:            1;
+
+    transform:          translateX(0%);
+    -webkit-transform:  translateX(0%);
+    -moz-transform:     translateX(0%);
+    -ms-transform:      translateX(0%);
+    -o-transform:       translateX(0%);
+}
+.siteBlock-slideLeft-open {
+    -webkit-transition: transform 0.8s, opacity 1s linear;
+    -moz-transition:    transform 0.8s, opacity 1s linear;
+    -ms-transition:     transform 0.8s, opacity 1s linear;
+    -o-transition:      transform 0.8s, opacity 1s linear;
+    transition:         transform 0.8s, opacity 1s linear;
+    transition-delay:   0.3s;
+
+    opacity:            0.6;
+    
+    transform:          translateX(10%);
+    -webkit-transform:  translateX(10%);
+    -moz-transform:     translateX(10%);
+    -ms-transform:      translateX(10%);
+    -o-transform:       translateX(10%);
+}
+.menuBlock-slideLeft,.menuBlock-slideLeft-closed{
+    transition:         transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition:    transform 0.5s;
+    -ms-transition:     transform 0.5s;
+    -o-transition:      transform 0.5s;
+    transition-delay:   0s;
+
+    transform:          translateX(-100%);
+    -webkit-transform:  translateX(-100%);
+    -moz-transform:     translateX(-100%);
+    -ms-transform:      translateX(-100%);
+    -o-transform:       translateX(-100%);
+}
+.menuBlock-slideLeft-open {
+    transition:         transform 0.8s;
+    -webkit-transition: transform 0.8s;
+    -moz-transition:    transform 0.8s;
+    -ms-transition:     transform 0.8s;
+    -o-transition:      transform 0.8s;
+    transition-delay:   0s;
+
+    transform:          translateX(0%);
+    -webkit-transform:  translateX(0%);
+    -moz-transform:     translateX(0%);
+    -ms-transform:      translateX(0%);
+    -o-transform:       translateX(0%);
+}
+/**slideRight**/
+.siteBlock-slideRight,
+.siteBlock-slideRight-closed,
+.siteBlock-slideRight-open,
+.menuBlock-slideRight,
+.menuBlock-slideRight-closed,
+.menuBlock-slideRight-open{
+    right: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    display: block;
+    position: fixed;
+}
+.siteBlock-slideRight,.siteBlock-slideRight-closed {
+    -webkit-transition: transform 0.3s, opacity 1s linear;
+    -moz-transition:    transform 0.3s, opacity 1s linear;
+    -ms-transition:     transform 0.3s, opacity 1s linear;
+    -o-transition:      transform 0.3s, opacity 1s linear;
+    transition:         transform 0.3s, opacity 1s linear;
+    transition-delay:   0s;
+    
+    opacity:            1;
+
+    transform:          translateX(-0%);
+    -webkit-transform:  translateX(-0%);
+    -moz-transform:     translateX(-0%);
+    -ms-transform:      translateX(-0%);
+    -o-transform:       translateX(-0%);
+}
+.siteBlock-slideRight-open {
+    -webkit-transition: transform 0.8s, opacity 1s linear;
+    -moz-transition:    transform 0.8s, opacity 1s linear;
+    -ms-transition:     transform 0.8s, opacity 1s linear;
+    -o-transition:      transform 0.8s, opacity 1s linear;
+    transition:         transform 0.8s, opacity 1s linear;
+    transition-delay:   0.3s;
+
+    opacity:            0.6;
+    
+    transform:          translateX(-10%);
+    -webkit-transform:  translateX(-10%);
+    -moz-transform:     translateX(-10%);
+    -ms-transform:      translateX(-10%);
+    -o-transform:       translateX(-10%);
+}
+.menuBlock-slideRight,.menuBlock-slideRight-closed{
+    transition:         transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition:    transform 0.5s;
+    -ms-transition:     transform 0.5s;
+    -o-transition:      transform 0.5s;
+    transition-delay:   0s;
+
+    transform:          translateX(100%);
+    -webkit-transform:  translateX(100%);
+    -moz-transform:     translateX(100%);
+    -ms-transform:      translateX(100%);
+    -o-transform:       translateX(100%);
+}
+.menuBlock-slideRight-open {
+    transition:         transform 0.8s;
+    -webkit-transition: transform 0.8s;
+    -moz-transition:    transform 0.8s;
+    -ms-transition:     transform 0.8s;
+    -o-transition:      transform 0.8s;
+    transition-delay:   0s;
+
+    transform:          translateX(-0%);
+    -webkit-transform:  translateX(-0%);
+    -moz-transform:     translateX(-0%);
+    -ms-transform:      translateX(-0%);
+    -o-transform:       translateX(-0%);
+}

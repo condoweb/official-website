@@ -1,0 +1,137 @@
+
+/*
+    BUTTON
+    Modifica l'aspetto dei button e link button.
+    Crea la tua Ui come vuoi da questo pannello... sii organizzato e user-friendly! ;)
+*/
+
+
+/*all*/
+.§button{
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+}
+
+/*generic + link pad correction*/
+.§button{
+    color: #fff !important;
+    padding:10px 20px 12px 20px;
+    box-shadow: 0 0 2px #346672 inset, 0 0 2px #346672;
+
+    background: #00a79c; /* Old browsers */
+    background: -moz-linear-gradient(top,  #00a79c 0%, #80a4a4 88%, #006980 89%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00a79c), color-stop(88%,#80a4a4), color-stop(89%,#006980)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #00a79c 0%,#80a4a4 88%,#006980 89%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #00a79c 0%,#80a4a4 88%,#006980 89%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #00a79c 0%,#80a4a4 88%,#006980 89%); /* IE10+ */
+    background: linear-gradient(to bottom,  #00a79c 0%,#80a4a4 88%,#006980 89%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a79c', endColorstr='#006980',GradientType=0 ); /* IE6-9 */
+
+    border: solid 1px #185e56;
+    border-radius: 8px; 
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+}
+a.§button{
+    padding:11px 20px 13.5px 20px;
+}
+
+.§button:hover,
+.focus{
+    color: #fff !important;
+    box-shadow: 0 0 30px #fff inset, 0 0 2px #346672;
+    background: #00a79c; /* Old browsers */
+    background: -moz-linear-gradient(top,  #00a79c 0%, #80a4a4 88%, #006980 89%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00a79c), color-stop(88%,#80a4a4), color-stop(89%,#006980)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #00a79c 0%,#80a4a4 88%,#006980 89%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #00a79c 0%,#80a4a4 88%,#006980 89%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #00a79c 0%,#80a4a4 88%,#006980 89%); /* IE10+ */
+    background: linear-gradient(to bottom,  #00a79c 0%,#80a4a4 88%,#006980 89%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a79c', endColorstr='#006980',GradientType=0 ); /* IE6-9 */
+}
+.§button:active{
+    box-shadow: 0 0 30px #000 inset, 0 0 2px #346672;
+    background: #00a79c; /* Old browsers */
+    background: -moz-linear-gradient(top,  #00a79c 0%, #769696 94%, #006980 96%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00a79c), color-stop(94%,#769696), color-stop(96%,#006980)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #00a79c 0%,#769696 94%,#006980 96%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #00a79c 0%,#769696 94%,#006980 96%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #00a79c 0%,#769696 94%,#006980 96%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a79c', endColorstr='#006980',GradientType=0 ); /* IE6-9 */
+}
+
+/*type*/
+.§button[type="text"],
+.§button[type="text"]:hover,
+.§button[type="text"]:active,
+.§button[type="text"]:disabled,
+.§button[type="text"]:disabled:hover,
+.§button[type="text"]:disabled:active,
+.§button[type="password"],
+.§button[type="password"]:hover,
+.§button[type="password"]:active,
+.§button[type="password"]:disabled,
+.§button[type="password"]:disabled:hover,
+.§button[type="password"]:disabled:active{
+    background: #fff !important;
+    color: #545f60 !important;
+    box-shadow: 0px 0px 4px #c1c1c1 inset;
+    -webkit-box-shadow: 0px 0px 4px #c1c1c1 inset;
+    -moz-box-shadow: 0px 0px 4px #c1c1c1 inset;
+}
+.disabled,
+.disabled:hover,
+.disabled:active,
+.§button:disabled,
+.§button:disabled:hover,
+.§button:disabled:active{
+    opacity: .50;
+    
+    color: #b5c6cc !important;
+    background: #545f60 !important;
+}
+
+textarea{
+    padding:25px;
+    background: #fff !important;
+    color: #545f60 !important;
+    border: solid 1px #185e56;
+    border-radius: 8px; 
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    box-shadow: 0px 0px 4px #c1c1c1 inset;
+    -webkit-box-shadow: 0px 0px 4px #c1c1c1 inset;
+    -moz-box-shadow: 0px 0px 4px #c1c1c1 inset;
+}
+
+
+/*btn group*/
+.§button-group{
+    border: solid 1px #185e56;
+    border-radius: 8px; 
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    box-shadow: 0px 0px 4px #c1c1c1 inset;
+    -webkit-box-shadow: 0px 0px 4px #c1c1c1 inset;
+    -moz-box-shadow: 0px 0px 4px #c1c1c1 inset;
+}
+.§button-group>*{
+    margin-left:-5px !important;
+}
+.§btn-separator{
+    border-left: 4px dotted #ccc;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+@media only screen and (max-width:992px) {
+    /*se i pulsanti hanno dei bordini allora...*/
+    .§btn-compact>* {
+        border-bottom: solid 0.2px rgba(245,245,245,0.1) !important;
+    }
+    .§btn-compact>*[class^="§checkbox-"]+*[class^="§button"] {
+        border-top: solid 0.2px rgba(245,245,245,0.1) !important;
+    }
+}

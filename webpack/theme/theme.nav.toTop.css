@@ -1,0 +1,26 @@
+
+/*
+    NAV.TOTOP
+    Modifica l'aspetto del/dei bottoni che riportano in cima alla pagina.
+*/
+
+.§totop, .§totop-left, .§totop-right{
+    display: block;
+
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    
+    color: #fff;
+    background: #545f60;
+    padding: 10px;
+    
+    border-radius: 5px; 
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.§totop:hover, .§totop-left:hover, .§totop-right:hover{
+    margin-bottom: 5px;
+}

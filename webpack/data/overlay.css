@@ -1,0 +1,825 @@
+*[class^="overlay"] {
+    position: fixed;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999999991;
+    background: rgba(255,255,255,0.8);
+}
+*[class^="overlay"] .overlayContent,
+*[class^="overlay"] .scroll-y ,
+*[class^="overlay"] .scroll-x {
+    z-index: 999999992;
+}
+*[class^="overlay"] .overlayContent{
+    display: block;
+    position: relative;
+}
+*[class^="overlay"] .scroll-y{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+*[class^="overlay"] .scroll-x{
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    width: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+*[class^="overlay"] .close, 
+.closeOverlay {
+    display:block !important;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    overflow: hidden;
+    border: none;
+    z-index: 999999993;
+}
+*[class^="overlay"] .close,
+.closeOverlay {
+    content: "close";
+    margin-right: 30px;
+}
+.siteCage{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    display: inline-block;
+    position: fixed;
+}
+.siteContent{
+    display: inline-block;
+}
+
+
+
+
+/*FADE EFFECT*/
+.siteCage-fade,
+.siteCage-fade-closed,
+.siteCage-fade-open,
+.overlay-fade,
+.overlay-fade-closed,
+.overlay-fade-open{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    display: block;
+    position: fixed;
+}
+.overlay-fade,.overlay-fade-closed {
+        visibility: visible;
+	opacity: 0;
+
+        transition:         opacity 0.5s, visibility 0.4s;
+	-webkit-transition: opacity 0.5s, visibility 0.4s;
+	-moz-transition:    opacity 0.5s, visibility 0.4s;
+	-ms-transition:     opacity 0.5s, visibility 0.4s;
+	-o-transition:      opacity 0.5s, visibility 0.4s;
+}
+
+.overlay-fade-open {
+        visibility: visible;
+	opacity: 1;
+
+        transition:         opacity 0.8s, visibility 0.4s;
+	-webkit-transition: opacity 0.8s, visibility 0.4s;
+        -moz-transition:    opacity 0.8s, visibility 0.4s;
+        -ms-transition:     opacity 0.8s, visibility 0.4s;
+        -o-transition:      opacity 0.8s, visibility 0.4s;
+}
+
+/*SCALE EFFECT*/
+.siteCage-scale,
+.siteCage-scale-closed,
+.siteCage-scale-open,
+.overlay-scale,
+.overlay-scale-closed,
+.overlay-scale-open{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    display: block;
+    position: fixed;
+}
+.overlay-scale,.overlay-scale-closed {
+	visibility:         hidden;
+	opacity:            0;
+
+        transition:         transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	-webkit-transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	-moz-transition:    transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	-ms-transition:     transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	-o-transition:      transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+
+        transform:          scale(0.9);
+	-webkit-transform:  scale(0.9);
+        -moz-transform:     scale(0.9);
+        -ms-transform:      scale(0.9);
+        -o-transform:       scale(0.9);
+}
+
+.overlay-scale-open {
+	opacity: 1;
+	visibility: visible;
+
+	transition:         transform 0.4s, opacity 0.4s;
+        -webkit-transition: transform 0.4s, opacity 0.4s;
+	-moz-transition:    transform 0.4s, opacity 0.4s;
+	-ms-transition:     transform 0.4s, opacity 0.4s;
+	-o-transition:      transform 0.4s, opacity 0.4s;
+
+        transform:          scale(1);	
+	-webkit-transform:  scale(1);
+        -moz-transform:     scale(1);
+        -ms-transform:      scale(1);
+        -o-transform:       scale(1);
+}
+
+/*PUSH EFFECT*/
+/**left**/
+.siteCage-pushLeft,
+.siteCage-pushLeft-closed,
+.siteCage-pushLeft-open,
+.overlay-pushLeft,
+.overlay-pushLeft-closed,
+.overlay-pushLeft-open{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    display: block;
+    position: fixed;
+}
+.siteCage-pushLeft,.siteCage-pushLeft-closed {
+    -webkit-transition: transform 0.3s;
+    -moz-transition:    transform 0.3s;
+    -ms-transition:     transform 0.3s;
+    -o-transition:      transform 0.3s;
+    transition:         transform 0.3s;
+    transition-delay:   0.4s;
+
+    transform:          scale(1,1);
+    -moz-transform:     scale(1,1);
+    -ms-transform:      scale(1,1);
+    -webkit-transform:  scale(1,1);
+    -o-transform:       scale(1,1);
+}
+.siteCage-pushLeft-open {
+    -webkit-transition: transform 0.5s;
+    -moz-transition:    transform 0.5s;
+    -ms-transition:     transform 0.5s;
+    -o-transition:      transform 0.5s;
+    transition:         transform 0.5s;
+    transition-delay:   0s;
+
+    transform:          scale(0.8,0.8);
+    -webkit-transform:  scale(0.8,0.8);
+    -moz-transform:     scale(0.8,0.8);
+    -ms-transform:      scale(0.8,0.8);
+    -o-transform:       scale(0.8,0.8);
+}
+.overlay-pushLeft,.overlay-pushLeft-closed{
+    transition:         transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition:    transform 0.5s;
+    -ms-transition:     transform 0.5s;
+    -o-transition:      transform 0.5s;
+    transition-delay:   0s;
+
+    transform:          translateX(-105%) scale(0.3,1.2);
+    -webkit-transform:  translateX(-105%) scale(0.3,1.2);
+    -moz-transform:     translateX(-105%) scale(0.3,1.2);
+    -ms-transform:      translateX(-105%) scale(0.3,1.2);
+    -o-transform:       translateX(-105%) scale(0.3,1.2);
+}
+.overlay-pushLeft-open {
+    transition:         transform 0.7s;
+    -webkit-transition: transform 0.7s;
+    -moz-transition:    transform 0.7s;
+    -ms-transition:     transform 0.7s;
+    -o-transition:      transform 0.7s;
+    transition-delay:   0.4s;
+
+    transform:          translateX(-0%) scale(1.0,1.0);
+    -webkit-transform:  translateX(-0%) scale(1.0,1.0);
+    -moz-transform:     translateX(-0%) scale(1.0,1.0);
+    -ms-transform:      translateX(-0%) scale(1.0,1.0);
+    -o-transform:       translateX(-0%) scale(1.0,1.0);
+}
+/**right**/
+.siteCage-pushRight,
+.siteCage-pushRight-closed,
+.siteCage-pushRight-open,
+.overlay-pushRight,
+.overlay-pushRight-closed,
+.overlay-pushRight-open{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    display: block;
+    position: fixed;
+}
+.siteCage-pushRight,.siteCage-pushRight-closed {
+    -webkit-transition: transform 0.3s;
+    -moz-transition:    transform 0.3s;
+    -ms-transition:     transform 0.3s;
+    -o-transition:      transform 0.3s;
+    transition:         transform 0.3s;
+    transition-delay:   0.4s;
+
+    transform:          scale(1,1);
+    -moz-transform:     scale(1,1);
+    -ms-transform:      scale(1,1);
+    -webkit-transform:  scale(1,1);
+    -o-transform:       scale(1,1);
+}
+.siteCage-pushRight-open {
+    -webkit-transition: transform 0.5s;
+    -moz-transition:    transform 0.5s;
+    -ms-transition:     transform 0.5s;
+    -o-transition:      transform 0.5s;
+    transition:         transform 0.5s;
+    transition-delay:   0s;
+
+    transform:          scale(0.8,0.8);
+    -webkit-transform:  scale(0.8,0.8);
+    -moz-transform:     scale(0.8,0.8);
+    -ms-transform:      scale(0.8,0.8);
+    -o-transform:       scale(0.8,0.8);
+}
+.overlay-pushRight,.overlay-pushRight-closed{
+    transition:         transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition:    transform 0.5s;
+    -ms-transition:     transform 0.5s;
+    -o-transition:      transform 0.5s;
+    transition-delay:   0s;
+
+    transform:          translateX(105%) scale(0.3,1.8);
+    -webkit-transform:  translateX(105%) scale(0.3,1.8);
+    -moz-transform:     translateX(105%) scale(0.3,1.8);
+    -ms-transform:      translateX(105%) scale(0.3,1.8);
+    -o-transform:       translateX(105%) scale(0.3,1.8);
+}
+.overlay-pushRight-open {
+    transition:         transform 0.7s;
+    -webkit-transition: transform 0.7s;
+    -moz-transition:    transform 0.7s;
+    -ms-transition:     transform 0.7s;
+    -o-transition:      transform 0.7s;
+    transition-delay:   0.4s;
+
+    transform:          translateX(0%) scale(1.0,1.0);
+    -webkit-transform:  translateX(0%) scale(1.0,1.0);
+    -moz-transform:     translateX(0%) scale(1.0,1.0);
+    -ms-transform:      translateX(0%) scale(1.0,1.0);
+    -o-transform:       translateX(0%) scale(1.0,1.0);
+}
+/**top**/
+.siteCage-pushTop,
+.siteCage-pushTop-closed,
+.siteCage-pushTop-open,
+.overlay-pushTop,
+.overlay-pushTop-closed,
+.overlay-pushTop-open{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    display: block;
+    position: fixed;
+}
+.siteCage-pushTop,.siteCage-pushTop-closed {
+    -webkit-transition: transform 0.3s;
+    -moz-transition:    transform 0.3s;
+    -ms-transition:     transform 0.3s;
+    -o-transition:      transform 0.3s;
+    transition:         transform 0.3s;
+    transition-delay:   0.4s;
+
+    transform:          scale(1,1);
+    -moz-transform:     scale(1,1);
+    -ms-transform:      scale(1,1);
+    -webkit-transform:  scale(1,1);
+    -o-transform:       scale(1,1);
+}
+.siteCage-pushTop-open {
+    -webkit-transition: transform 0.5s;
+    -moz-transition:    transform 0.5s;
+    -ms-transition:     transform 0.5s;
+    -o-transition:      transform 0.5s;
+    transition:         transform 0.5s;
+    transition-delay:   0s;
+
+    transform:          scale(0.8,0.8);
+    -webkit-transform:  scale(0.8,0.8);
+    -moz-transform:     scale(0.8,0.8);
+    -ms-transform:      scale(0.8,0.8);
+    -o-transform:       scale(0.8,0.8);
+}
+.overlay-pushTop,.overlay-pushTop-closed{
+    transition:         transform 0.8s;
+    -webkit-transition: transform 0.8s;
+    -moz-transition:    transform 0.8s;
+    -ms-transition:     transform 0.8s;
+    -o-transition:      transform 0.8s;
+    transition-delay:   0s;
+
+    transform:          translateY(-120%) scale(1.5,0.3);
+    -webkit-transform:  translateY(-120%) scale(1.5,0.3);
+    -moz-transform:     translateY(-120%) scale(1.5,0.3);
+    -ms-transform:      translateY(-120%) scale(1.5,0.3);
+    -o-transform:       translateY(-120%) scale(1.5,0.3);
+}
+.overlay-pushTop-open {
+    transition:         transform 0.8s;
+    -webkit-transition: transform 0.8s;
+    -moz-transition:    transform 0.8s;
+    -ms-transition:     transform 0.8s;
+    -o-transition:      transform 0.8s;
+    transition-delay:   0.4s;
+
+    transform:          translateY(-0%) scale(1.0,1.0);
+    -webkit-transform:  translateY(-0%) scale(1.0,1.0);
+    -moz-transform:     translateY(-0%) scale(1.0,1.0);
+    -ms-transform:      translateY(-0%) scale(1.0,1.0);
+    -o-transform:       translateY(-0%) scale(1.0,1.0);
+}
+/**bottom**/
+.siteCage-push,
+.siteCage-push-closed,
+.siteCage-push-open,
+.overlay-push,
+.overlay-push-closed,
+.overlay-push-open,
+
+.siteCage-pushBottom,
+.siteCage-pushBottom-closed,
+.siteCage-pushBottom-open,
+.overlay-pushBottom,
+.overlay-pushBottom-closed,
+.overlay-pushBottom-open{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    display: block;
+    position: fixed;
+}
+.siteCage-push,.siteCage-push-closed,
+.siteCage-pushBottom,.siteCage-pushBottom-closed {
+    -webkit-transition: transform 0.3s;
+    -moz-transition:    transform 0.3s;
+    -ms-transition:     transform 0.3s;
+    -o-transition:      transform 0.3s;
+    transition:         transform 0.3s;
+    transition-delay:   0.4s;
+
+    transform:          scale(1,1);
+    -moz-transform:     scale(1,1);
+    -ms-transform:      scale(1,1);
+    -webkit-transform:  scale(1,1);
+    -o-transform:       scale(1,1);
+}
+.siteCage-push-open,
+.siteCage-pushBottom-open {
+    -webkit-transition: transform 0.5s;
+    -moz-transition:    transform 0.5s;
+    -ms-transition:     transform 0.5s;
+    -o-transition:      transform 0.5s;
+    transition:         transform 0.5s;
+    transition-delay:   0s;
+
+    transform:          scale(0.8,0.8);
+    -webkit-transform:  scale(0.8,0.8);
+    -moz-transform:     scale(0.8,0.8);
+    -ms-transform:      scale(0.8,0.8);
+    -o-transform:       scale(0.8,0.8);
+}
+.overlay-push,.overlay-push-closed,
+.overlay-pushBottom,.overlay-pushBottom-closed{
+    transition:         transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition:    transform 0.5s;
+    -ms-transition:     transform 0.5s;
+    -o-transition:      transform 0.5s;
+    transition-delay:   0s;
+
+    transform:          translateY(130%) scale(1.5,1.5);
+    -webkit-transform:  translateY(130%) scale(1.5,1.5);
+    -moz-transform:     translateY(130%) scale(1.5,1.5);
+    -ms-transform:      translateY(130%) scale(1.5,1.5);
+    -o-transform:       translateY(130%) scale(1.5,1.5);
+}
+.overlay-push-open,
+.overlay-pushBottom-open {
+    transition:         transform 0.7s;
+    -webkit-transition: transform 0.7s;
+    -moz-transition:    transform 0.7s;
+    -ms-transition:     transform 0.7s;
+    -o-transition:      transform 0.7s;
+    transition-delay:   0.4s;
+
+    transform:          translateY(0%) scale(1.0,1.0);
+    -webkit-transform:  translateY(0%) scale(1.0,1.0);
+    -moz-transform:     translateY(0%) scale(1.0,1.0);
+    -ms-transform:      translateY(0%) scale(1.0,1.0);
+    -o-transform:       translateY(0%) scale(1.0,1.0);
+}
+
+/*SLIDE EFFECT*/
+/**left**/
+.siteCage-slide,
+.siteCage-slide-closed,
+.siteCage-slide-open,
+.overlay-slide,
+.overlay-slide-closed,
+.overlay-slide-open,
+
+.siteCage-slideLeft,
+.siteCage-slideLeft-closed,
+.siteCage-slideLeft-open,
+.overlay-slideLeft,
+.overlay-slideLeft-closed,
+.overlay-slideLeft-open{
+    max-width:  100%;
+    width:      100%;
+    height:     100%;
+    max-height: 100%;
+    overflow:   hidden;
+    display:    block;
+    position:   fixed; 
+}
+
+.siteCage-slide,
+.siteCage-slideLeft {
+    transition:         transform 1.7s;
+    -webkit-transition: transform 1.7s;
+    -moz-transition:    transform 1.7s;
+    -ms-transition:     transform 1.7s;
+    -o-transition:      transform 1.7s;
+    transition-delay:   0.6s;
+
+    transform:          translateX(0%);
+    -webkit-transform:  translateX(0%);
+    -moz-transform:     translateX(0%);
+    -ms-transform:      translateX(0%);
+    -o-transform:       translateX(0%);
+}
+.siteCage-slide-open,
+.siteCage-slideLeft-open {
+    transition:         transform 1.7s;
+    -webkit-transition: transform 1.7s;
+    -moz-transition:    transform 1.7s;
+    -ms-transition:     transform 1.7s;
+    -o-transition:      transform 1.7s;
+    transition-delay:   0.6s;
+
+    transform:          translateX(150%);
+    -webkit-transform:  translateX(150%);
+    -moz-transform:     translateX(150%);
+    -ms-transform:      translateX(150%);
+    -o-transform:       translateX(150%);
+}
+.siteCage-slide-closed,
+.siteCage-slideLeft-closed{
+    transition:         transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition:    transform 0.5s;
+    -ms-transition:     transform 0.5s;
+    -o-transition:      transform 0.5s;
+    transition-delay:   0.1s;
+
+    transform:          translateX(-0%);
+    -webkit-transform:  translateX(-0%);
+    -moz-transform:     translateX(-0%);
+    -ms-transform:      translateX(-0%);
+    -o-transform:       translateX(-0%);
+}
+
+.overlay-slide,.overlay-slide-closed,
+.overlay-slideLeft,.overlay-slideLeft-closed {
+    transition:         transform 0.7s;
+    -webkit-transition: transform 0.7s;
+    -moz-transition:    transform 0.7s;
+    -ms-transition:     transform 0.7s;
+    -o-transition:      transform 0.7s;
+    transition-delay:   0.05s;
+
+    transform:          translateX(-100%);
+    -webkit-transform:  translateX(-100%);
+    -moz-transform:     translateX(-100%);
+    -ms-transform:      translateX(-100%);
+    -o-transform:       translateX(-100%);
+}
+
+.overlay-slide-open,
+.overlay-slideLeft-open {
+    transition:         transform 1.5s, visibility 0s 0.5s;
+    -webkit-transition: transform 1.5s, visibility 0s 0.5s;
+    -moz-transition:    transform 1.5s, visibility 0s 0.5s;
+    -ms-transition:     transform 1.5s, visibility 0s 0.5s;
+    -o-transition:      transform 1.5s, visibility 0s 0.5s;
+    transition-delay:   0.3s;
+
+    visibility:         visible;
+    transform:          translateX(0%);
+    -webkit-transform:  translateX(0%);
+    -moz-transform:     translateX(0%);
+    -ms-transform:      translateX(0%);
+    -o-transform:       translateX(0%);
+}
+
+/**right**/
+.siteCage-slideRight,
+.siteCage-slideRight-closed,
+.siteCage-slideRight-open,
+.overlay-slideRight,
+.overlay-slideRight-closed,
+.overlay-slideRight-open{
+    max-width:  100%;
+    width:      100%;
+    height:     100%;
+    max-height: 100%;
+    overflow:   hidden;
+    display:    block;
+    position:   fixed; 
+}
+
+.siteCage-slideRight {
+    transition:         transform 1.7s;
+    -webkit-transition: transform 1.7s;
+    -moz-transition:    transform 1.7s;
+    -ms-transition:     transform 1.7s;
+    -o-transition:      transform 1.7s;
+    transition-delay:   0.6s;
+
+    transform:          translateX(0%);
+    -webkit-transform:  translateX(0%);
+    -moz-transform:     translateX(0%);
+    -ms-transform:      translateX(0%);
+    -o-transform:       translateX(0%);
+}
+.siteCage-slideRight-open {
+    transition:         transform 1.7s;
+    -webkit-transition: transform 1.7s;
+    -moz-transition:    transform 1.7s;
+    -ms-transition:     transform 1.7s;
+    -o-transition:      transform 1.7s;
+    transition-delay:   0.6s;
+
+    transform:          translateX(-150%);
+    -webkit-transform:  translateX(-150%);
+    -moz-transform:     translateX(-150%);
+    -ms-transform:      translateX(-150%);
+    -o-transform:       translateX(-150%);
+}
+.siteCage-slideRight-closed{
+    transition:         transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition:    transform 0.5s;
+    -ms-transition:     transform 0.5s;
+    -o-transition:      transform 0.5s;
+    transition-delay:   0.1s;
+
+    transform:          translateX(0%);
+    -webkit-transform:  translateX(0%);
+    -moz-transform:     translateX(0%);
+    -ms-transform:      translateX(0%);
+    -o-transform:       translateX(0%);
+}
+
+.overlay-slideRight,.overlay-slideRight-closed {
+    transition:         transform 0.7s;
+    -webkit-transition: transform 0.7s;
+    -moz-transition:    transform 0.7s;
+    -ms-transition:     transform 0.7s;
+    -o-transition:      transform 0.7s;
+    transition-delay:   0.05s;
+
+    transform:          translateX(100%);
+    -webkit-transform:  translateX(100%);
+    -moz-transform:     translateX(100%);
+    -ms-transform:      translateX(100%);
+    -o-transform:       translateX(100%);
+}
+
+.overlay-slideRight-open {
+    transition:         transform 1.5s, visibility 0s 0.5s;
+    -webkit-transition: transform 1.5s, visibility 0s 0.5s;
+    -moz-transition:    transform 1.5s, visibility 0s 0.5s;
+    -ms-transition:     transform 1.5s, visibility 0s 0.5s;
+    -o-transition:      transform 1.5s, visibility 0s 0.5s;
+    transition-delay:   0.3s;
+
+    visibility:         visible;
+    transform:          translateX(-0%);
+    -webkit-transform:  translateX(-0%);
+    -moz-transform:     translateX(-0%);
+    -ms-transform:      translateX(-0%);
+    -o-transform:       translateX(-0%);
+}
+
+/**top**/
+.siteCage-slideTop,
+.siteCage-slideTop-closed,
+.siteCage-slideTop-open,
+.overlay-slideTop,
+.overlay-slideTop-closed,
+.overlay-slideTop-open{
+    max-width:  100%;
+    width:      100%;
+    height:     100%;
+    max-height: 100%;
+    overflow:   hidden;
+    display:    block;
+    position:   fixed; 
+}
+
+.siteCage-slideTop {
+    transition:         transform 1.7s;
+    -webkit-transition: transform 1.7s;
+    -moz-transition:    transform 1.7s;
+    -ms-transition:     transform 1.7s;
+    -o-transition:      transform 1.7s;
+    transition-delay:   0.6s;
+
+    transform:          translateY(0%);
+    -webkit-transform:  translateY(0%);
+    -moz-transform:     translateY(0%);
+    -ms-transform:      translateY(0%);
+    -o-transform:       translateY(0%);
+}
+.siteCage-slideTop-open {
+    transition:         transform 1.7s;
+    -webkit-transition: transform 1.7s;
+    -moz-transition:    transform 1.7s;
+    -ms-transition:     transform 1.7s;
+    -o-transition:      transform 1.7s;
+    transition-delay:   0.6s;
+
+    transform:          translateY(-150%);
+    -webkit-transform:  translateY(-150%);
+    -moz-transform:     translateY(-150%);
+    -ms-transform:      translateY(-150%);
+    -o-transform:       translateY(-150%);
+}
+.siteCage-slideTop-closed{
+    transition:         transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition:    transform 0.5s;
+    -ms-transition:     transform 0.5s;
+    -o-transition:      transform 0.5s;
+    transition-delay:   0.1s;
+
+    transform:          translateY(0%);
+    -webkit-transform:  translateY(0%);
+    -moz-transform:     translateY(0%);
+    -ms-transform:      translateY(0%);
+    -o-transform:       translateY(0%);
+}
+
+.overlay-slideTop,.overlay-slideTop-closed {
+    transition:         transform 0.7s;
+    -webkit-transition: transform 0.7s;
+    -moz-transition:    transform 0.7s;
+    -ms-transition:     transform 0.7s;
+    -o-transition:      transform 0.7s;
+    transition-delay:   0.05s;
+
+    transform:          translateY(100%);
+    -webkit-transform:  translateY(100%);
+    -moz-transform:     translateY(100%);
+    -ms-transform:      translateY(100%);
+    -o-transform:       translateY(100%);
+}
+
+.overlay-slideTop-open {
+    transition:         transform 1.5s, visibility 0s 0.5s;
+    -webkit-transition: transform 1.5s, visibility 0s 0.5s;
+    -moz-transition:    transform 1.5s, visibility 0s 0.5s;
+    -ms-transition:     transform 1.5s, visibility 0s 0.5s;
+    -o-transition:      transform 1.5s, visibility 0s 0.5s;
+    transition-delay:   0.3s;
+
+    visibility:         visible;
+    transform:          translateY(-0%);
+    -webkit-transform:  translateY(-0%);
+    -moz-transform:     translateY(-0%);
+    -ms-transform:      translateY(-0%);
+    -o-transform:       translateY(-0%);
+}
+
+/**bottom**/
+.siteCage-slideBottom,
+.siteCage-slideBottom-closed,
+.siteCage-slideBottom-open,
+.overlay-slideBottom,
+.overlay-slideBottom-closed,
+.overlay-slideBottom-open{
+    max-width:  100%;
+    width:      100%;
+    height:     100%;
+    max-height: 100%;
+    overflow:   hidden;
+    display:    block;
+    position:   fixed; 
+}
+
+.siteCage-slideBottom {
+    transition:         transform 1.7s;
+    -webkit-transition: transform 1.7s;
+    -moz-transition:    transform 1.7s;
+    -ms-transition:     transform 1.7s;
+    -o-transition:      transform 1.7s;
+    transition-delay:   0.6s;
+
+    transform:          translateY(-0%);
+    -webkit-transform:  translateY(-0%);
+    -moz-transform:     translateY(-0%);
+    -ms-transform:      translateY(-0%);
+    -o-transform:       translateY(-0%);
+}
+.siteCage-slideBottom-open {
+    transition:         transform 1.7s;
+    -webkit-transition: transform 1.7s;
+    -moz-transition:    transform 1.7s;
+    -ms-transition:     transform 1.7s;
+    -o-transition:      transform 1.7s;
+    transition-delay:   0.6s;
+
+    transform:          translateY(150%);
+    -webkit-transform:  translateY(150%);
+    -moz-transform:     translateY(150%);
+    -ms-transform:      translateY(150%);
+    -o-transform:       translateY(150%);
+}
+.siteCage-slideBottom-closed{
+    transition:         transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition:    transform 0.5s;
+    -ms-transition:     transform 0.5s;
+    -o-transition:      transform 0.5s;
+    transition-delay:   0.1s;
+
+    transform:          translateY(-0%);
+    -webkit-transform:  translateY(-0%);
+    -moz-transform:     translateY(-0%);
+    -ms-transform:      translateY(-0%);
+    -o-transform:       translateY(-0%);
+}
+
+.overlay-slideBottom,.overlay-slideBottom-closed {
+    transition:         transform 0.7s;
+    -webkit-transition: transform 0.7s;
+    -moz-transition:    transform 0.7s;
+    -ms-transition:     transform 0.7s;
+    -o-transition:      transform 0.7s;
+    transition-delay:   0.05s;
+
+    transform:          translateY(-100%);
+    -webkit-transform:  translateY(-100%);
+    -moz-transform:     translateY(-100%);
+    -ms-transform:      translateY(-100%);
+    -o-transform:       translateY(-100%);
+}
+
+.overlay-slideBottom-open {
+    transition:         transform 1.5s, visibility 0s 0.5s;
+    -webkit-transition: transform 1.5s, visibility 0s 0.5s;
+    -moz-transition:    transform 1.5s, visibility 0s 0.5s;
+    -ms-transition:     transform 1.5s, visibility 0s 0.5s;
+    -o-transition:      transform 1.5s, visibility 0s 0.5s;
+    transition-delay:   0.3s;
+
+    visibility:         visible;
+    transform:          translateY(0%);
+    -webkit-transform:  translateY(0%);
+    -moz-transform:     translateY(0%);
+    -ms-transform:      translateY(0%);
+    -o-transform:       translateY(0%);
+}
+

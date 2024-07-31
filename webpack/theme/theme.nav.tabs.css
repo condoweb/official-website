@@ -1,0 +1,30 @@
+
+/*
+    NAV.TABS
+    Modifica l'aspetto dei pannelli a tabs.
+*/
+
+.§tabs{
+    background: #fff;
+    box-shadow: inset 0px 0px 10px #ccc;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.tabsList>li>a{
+    color: #fff;
+    background: #545f60;
+    padding: 10px;
+}
+.tabsList>li>a:hover{
+    color: #fff;
+    background: #031a23;
+}
+.tab_active{
+    background: #031a23 !important;
+}
+
+.tabsContent>div{
+    box-shadow: inset 0px 0px 10px #ccc;
+    overflow: hidden;
+}

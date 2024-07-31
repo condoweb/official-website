@@ -1,0 +1,130 @@
+.topBar{
+    width: 100%;
+    background: #FFF;
+    opacity: 0.9;
+}
+.topBar a{
+    display: inline-block;
+    margin: 0 -5.5px 0 0;
+    padding: 7px 12px 7px 12px;
+}
+.topBar a:last-of-type{
+    margin: 0 0px 0 0;
+}
+
+.homeLogo{
+    padding: 20px 0 10px 30px;
+}
+.homeSlogan{
+    margin-top: -5px;
+    padding: 20px 20px 10px 0px;
+    color: #fff !important;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.linkformobile{
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #009999;
+    opacity: 0.5;
+    padding: 20px;
+    z-index: 999;
+}
+
+.linkformobile:hover{
+    color: #FFF;
+    background: #00a79c;
+}
+
+
+.siteFooterHome{
+    width: 100%;
+    background: #FFF;
+    opacity: 0.3;
+}
+.siteFooterHome>p{
+    padding: 10px;
+    margin: 0 auto;
+    display: inline-block;
+    max-width: 1100px;
+    color: #000;
+    font-size: 12px;
+}
+
+.siteFooterPage{
+    max-width: 100%;
+    display: block;
+    background: url(media/image/design/bkgHome.jpg);
+    background-size: cover;
+    background-position: bottom;
+    z-index: 999;
+    box-shadow: 0px 15px 15px rgba(0,0,0,0.4) inset;
+}
+.siteFooterPage>p{
+    padding: 30px 10px 10px 10px;
+    margin: 0 auto;
+    display: inline-block;
+    max-width: 1100px;
+    color: #FFF;
+    font-size: 12px;
+}
+
+.§button.priceInput{
+    padding-left: 50px !important; 
+}
+.virg{
+    display: inline;
+    font-size: 40px;
+    padding-left: 2px;
+    width: 3px;
+}
+.price:before{
+    position: absolute;
+    display: block;
+
+    content: "€";
+
+    color: #FFF;
+    padding: 11px 15px 11px 15px;
+    background: #00a79c;
+    border: #666666 1px solid;
+    margin: 0 0 0 -0px;
+    text-align: center;
+    z-index: 999;
+    
+    box-shadow: 0 0 2px #346672 inset;
+    
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.slash{
+    display: inline;
+    font-size: 18px;
+    padding-left: 5px;
+    margin-right: -2px;
+    width: 2px;
+}
+
+input.fileUpload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: 100%;
+    z-index: 999;
+}
+

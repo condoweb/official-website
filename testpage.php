@@ -1,12 +1,16 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-    <?php include "inside.metataghead.php" ?>
+    <head>
+        <?php include "@.metataghead.php" ?>
+        <title>CONDOWEB/TEST UI...</title>
+    </head>
 
     <body>
 
-        <!--SITE CONTENT/-->
+        <h1 class="hidden">Condoweb > ui tester.</h1>
+        <?php include "@.page.topbar.big.php" ?>
 
-        <?php include "inside.topBarBig.php" ?>
 
         <div class="§fill-full" style="background:white;" >
             <div class="§fill-limits pad-40 §text-left">
@@ -134,12 +138,11 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 
             </div>
         </div>
+        <?php include "@.page.footer.php" ?>
+        <a class="§totop-left"><i class="ico-up-circle-1"></i></a>
 
-        <!--/SITE CONTENT-->
+        <?php include "@.scriptsandcss.php" ?>
 
-        <?php include "inside.scriptsandcss.php" ?>
-
-            
     </body>
 
 </html>

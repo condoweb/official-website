@@ -1,15 +1,19 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-    <?php include "inside.metataghead.php" ?>
+    <head>
+        <?php include "@.metataghead.php" ?>
+        <title>CONDOWEB/CONDOMINI...</title>
+    </head>
 
     <body>
 
-        <!--SITE CONTENT/-->
-
-        <?php include "inside.topBarBig.php" ?>
+        <h1 class="hidden">Condominio Trovato</h1>
+        <?php include "@.page.topbar.big.php" ?>
 
         <div class="§fill-full" style="background:white;" >
             <div class="§fill-limits pad-40 §text-left">
+                <div class="desktop-off mobile-on compact-on" style="margin-top: 80px;"></div>
                 
                 <h3>CONDOWEB</h3>
                 <h2>CONDOMINIO "VILLA CESARE" ...</h2>
@@ -40,20 +44,22 @@
                         <i>Via Dodecaneso 3, 00144, ROMA</i>   
                     </div>
                     <div class="section-group pad-small §text-center">
-                        Amministrato da: <a href="">NOME COGNOME</a> - <a href="">CONTATTALO</a>
+                        Amministrato da: <a class="loaderOut" href="condoweb.profiloutente.php">NOME COGNOME</a> - <a class="§overlay" rel="scale" href="condoweb.condominio.overaly.contatto.php">CONTATTALO</a>
                     </div>
                     <div class="section-group">
                         <div class="§button-group §radius-small-bottom §fill-full">
-                            <a class="§button §fill-full" style="display: block !important;">Entra nel condominio</a>
+                            <a class="§button §fill-full §overlay" rel="scale" href="condoweb.condominio.overaly.entraincondominio.php" style="display: block !important;">Entra nel condominio</a>
                         </div>
                     </div>
                 </div>
 
-        <!--/SITE CONTENT-->
+            </div>
+        </div>
+        <?php include "@.page.footer.php" ?>
+        <a class="§totop-left"><i class="ico-up-circle-1"></i></a>
 
-        <?php include "inside.scriptsandcss.php" ?>
+        <?php include "@.scriptsandcss.php" ?>
 
-            
     </body>
 
 </html>

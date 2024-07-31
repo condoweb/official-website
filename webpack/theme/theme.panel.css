@@ -1,0 +1,22 @@
+
+/*
+    PANEL
+    Modifica l'aspetto dei pannelli.
+    Per creare pannelli diversi aggiungi una classe, es.:
+    <div class="§panel ClasseMioPannello"></div>
+    o modifica il panel standard con quello che segue.
+*/
+
+*[class^="§panel"]{
+    border-color: #c7ced0;
+    background: #FFF;
+}
+.section, .section-group{
+    border-color: #c7ced0;
+}
+
+
+/*correzione tabelle*/
+*[class^="§panel"] th{
+    padding-top: 0 !important;
+}
